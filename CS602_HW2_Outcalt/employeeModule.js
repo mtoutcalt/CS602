@@ -20,7 +20,6 @@ module.exports = {
   lookupByLastName: function(lastNameInput) {
     var matchedArray = _.where(data, {lastName:lastNameInput});
     if (matchedArray.length == 0 || typeof matchedArray === "undefined") {    //array is empty if length is 0
-      console.log("returning empty array");
       return [];
     } else {
       return matchedArray;
@@ -30,5 +29,6 @@ module.exports = {
     var idsFromDataArray = _.pluck(data, 'id');   //get all ids
     var newId = _.max(idsFromDataArray) + 1;      //return max of the id array then increment
     data.push({id:newId, firstName:firstNameInput, lastName:lastNameInput})
+    return newId;
   },
 };
