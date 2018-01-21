@@ -1,0 +1,32 @@
+<style>
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+   background-color: #dddddd;
+}
+</style>
+
+
+<h3>Employee with Id: {{id}}</h3>
+<hr />
+<table>
+  <tr>
+    <th>Id</td>
+    <th>First Name</td>
+    <th>Last Name</td>
+  </tr>
+  <tr>
+      <td>
+        {{employee.id}}
+      </td>
+      <td>
+        {{employee.firstName}}
+      </td>
+      <td>
+        {{employee.lastName}}
+      </td>
+    </tr>
+</table>
