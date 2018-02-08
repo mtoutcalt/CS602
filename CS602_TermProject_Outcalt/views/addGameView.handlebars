@@ -1,0 +1,34 @@
+<div class="table-responsive">
+  <form method="post" action="/games/add">
+    <table class="table table-condensed">
+    <tbody>
+        <tr>
+          <th width="200">Video Game Name: </th>
+          <td><input type="text" name="gameName" required placeholder="Name"></td>
+        </tr>
+        <tr>
+          <th>Video Game Description: </th>
+          <td><input type="text" name="gameDescription" required placeholder="Description"></td>
+        </tr>
+        <tr>
+          <th>Video Game Price: </th>
+          <td><input type="text" name="gamePrice" required placeholder="Price"></td>
+        </tr>
+        <tr>
+          <th>Video Game Quantity: </th>
+          <td><input type="text" name="gameQuantity" required placeholder="Quantity"></td>
+        </tr>
+    </tbody>
+
+      <tfooter>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Save" class="btn btn-success">
+            <input type="button" value="Cancel" class="btn btn-danger" onclick="cancelGameAdd()">
+          </td>
+        </tr>
+      </tfooter>
+    </table>
+  </form>
+</div>
