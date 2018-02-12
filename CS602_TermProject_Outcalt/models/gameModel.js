@@ -22,7 +22,6 @@ module.exports = {
       connection = mongoose.createConnection(dbUrl);
       model = connection.model("outcalt_gameModel", gameSchema);
 
-      //creating and saving the 3 employees per the instruction
       let game;
       game = new model({
 				name: 'The Legend of Zelda: Ocarina of Time',

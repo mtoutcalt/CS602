@@ -1,0 +1,32 @@
+<div>
+  <div class="table-responsive">
+    <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>Order Date Created</th>
+        <th>Order Games</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each data}}
+        <tr>
+          <td>{{this.id}}</td>
+          <td>{{this.created}}</td>
+          <td>{{this.games[0].name}}</td>
+          <td>
+            <a href="/orders/edit/{{this.id}}">Edit</a>
+            <a href="/orders/delete/{{this.id}}">Delete</a>
+          </td>
+        </tr>
+        {{/each}}
+    </tbody>
+
+      <tfooter>
+        <tr>
+          <td> <button class="btn btn-primary" onClick="addOrder();">Add</button> </td>
+        </tr>
+      </tfooter>
+    </table>
+  </div>
+</div>

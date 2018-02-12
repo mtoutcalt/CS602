@@ -3,6 +3,7 @@
     <table class="table table-condensed">
     <thead>
       <tr>
+        <th>Video Game ID</th>
         <th>Video Game Name</th>
         <th>Video Game Description</th>
         <th>Video Game Price</th>
@@ -12,6 +13,7 @@
     <tbody>
       {{#each data}}
         <tr>
+          <td>{{this.id}}</td>
           <td>{{this.name}}</td>
           <td>{{this.description}}</td>
           <td>{{this.price}}</td>

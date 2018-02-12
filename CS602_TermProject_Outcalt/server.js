@@ -12,8 +12,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 //Routing
-const routes = require('./controllers/routes');
-app.use('/', routes);
+const gameRoutes = require('./controllers/game/routes');
+const customerRoutes = require('./controllers/customer/routes');
+const orderRoutes = require('./controllers/order/routes');
+
+app.use('/', gameRoutes);
+app.use('/', customerRoutes);
+app.use('/', orderRoutes);
 
 app.use( (req, res) => {
   res.status(404);
