@@ -1,20 +1,24 @@
 const DB = require('../../models/orderModel.js');
 const Order = DB.getOrderModel();
 
-module.exports = function displayOrders(req, res, next) {
-  Order.find({}, (err, orders) => {
-    if (err) {
-      console.log("Error: %s ", err);
-    }
+const gameDB = require('../../models/gameModel.js');
+const Game = gameDB.getGameModel();
 
-    let results = orders.map( (order) => {
-      return {
-        id: order._id,
-        games: order.games,
-        created: order.created
-      }
+module.exports = async function displayOrders(req, res, next) {
+
+    let orderAsync = await Order.find({});
+
+    let results = orderAsync.map( async (order) => {
+        let game = await Game.findById(order.gameId);
+        return {
+          id: order._id,
+          created: order.created,
+          game: game.name,
+          orderNumber: order.orderNumber
+        }
     });
-      res.render('displayOrdersView', {title: "List of Orders", data: results})
-  });
 
+    Promise.all(results).then( (results) => {
+      res.render('displayOrdersView', {title: "List of Orders", data: results});
+    });
 };

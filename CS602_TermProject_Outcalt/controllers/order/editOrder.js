@@ -14,8 +14,9 @@ module.exports = function editOrder(req, res, next) {
 
     res.render('editOrderView', {title:"Edit Order",
                                   data: { id: order._id,
-                                          games: order.games,
-                                          created: order.created }
+                                          games: order.game,
+                                          created: order.created,
+                                          orderNumber: order.orderNumber }
                                       });
   });
 };

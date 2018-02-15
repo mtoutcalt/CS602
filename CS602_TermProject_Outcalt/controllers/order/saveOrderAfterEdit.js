@@ -12,8 +12,9 @@ module.exports = function saveOrder(req, res, next) {
       return res.render('404');
     }
 
-    order.games = req.body.games; //get data from body of post
+    order.games = req.body.game; //get data from body of post
     order.created = req.body.created;
+    order.orderNumber = req.body.orderNumber;
 
     order.save( (err) => {
       if (err) {

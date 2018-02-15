@@ -6,6 +6,7 @@
         <th>Order ID</th>
         <th>Order Date Created</th>
         <th>Order Games</th>
+        <th>Order Number</th>
       </tr>
     </thead>
     <tbody>
@@ -13,7 +14,8 @@
         <tr>
           <td>{{this.id}}</td>
           <td>{{this.created}}</td>
-          <td>{{this.games[0].name}}</td>
+          <td>{{this.game}}</td>
+          <td>{{this.orderNumber}}</td>
           <td>
             <a href="/orders/edit/{{this.id}}">Edit</a>
             <a href="/orders/delete/{{this.id}}">Delete</a>
