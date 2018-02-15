@@ -44,6 +44,22 @@ function loadModelData() {
   let Customer = customerDB.getCustomerModel();
   let Order = orderDB.getOrderModel();
 
+  let customer1 = new Customer({
+    firstName: 'Mark',
+    lastName: 'Thomas',
+    accountName: 'mt',
+    address: '123 Main Street'
+  });
+  customer1.save();
+
+  let customer2 = new Customer({
+    firstName: 'Liam',
+    lastName: 'Thomas',
+    accountName: 'lt',
+    address: '123 Main Street'
+  });
+  customer2.save();
+
   let game1 = new Game({
   	name: 'Superman 64',
     description: 'A terrible game on the Nintendo 64',
@@ -74,7 +90,8 @@ function loadModelData() {
     let order = new Order({
     	created: new Date(),
       orderNumber: "456",
-      gameId: game3._id
+      gameId: game3._id,
+      customerId: customer1._id
     });
 
     order.save( (err) => {
@@ -84,34 +101,7 @@ function loadModelData() {
     console.log("Success!");
   });
 };
-//
-//   ////////////////////
-//
-//   var getOrder = Order.findOne({ orderNumber: "456"})
-//   .populate('outcalt_gameModel')
-//   .exec(function (err, order) {
-//     if (err) return handleError(err);
-//     return order;
-//     // console.log('The game is %s', order.created);
-//     // console.log('The game is %s', order.orderNumber);
-//     // console.log('Winner? %s', order.games);
-//   });
-//
-//   console.log('Winner??????? %s', getOrder.orderNumber);
-//
-//   var getGame;
-//   Game.findOne({ _id: getOrder.games})
-//   .exec(function (err, game) {
-//     if (err) return handleError(err);
-//     console.log('The game is within game %s', game.name);
-//     getGame = game;
-//   });
-//
-//   getOrder.games = getGame;
-//   console.log('The game is %s', getOrder.created);
-//   console.log('The game is %s', getOrder.orderNumber);
-//   console.log('Winner? %s', getOrder.games.name);
-//////////////////////////
+
 
 
 // https://coursework.vschool.io/mongoose-schemas

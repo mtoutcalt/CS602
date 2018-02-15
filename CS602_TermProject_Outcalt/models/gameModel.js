@@ -18,9 +18,9 @@ let gameSchema = new Schema({
 	quantity: String
 });
 
-gameSchema.methods.getGames = function() {
-		return Order.find({ gameId: this._id});
-};
+// gameSchema.methods.getGames = function() {
+// 		return Order.find({ gameId: this._id});
+// };
 
 module.exports = {
   getGameModel: function getGameModel() {

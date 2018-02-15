@@ -20,9 +20,9 @@ let orderSchema = new Schema({
   gameId: String
 });
 
-orderSchema.methods.getGames = function() {
-		return Order.find({ gameId: this.gameId});
-};
+// orderSchema.methods.getGames = function() {
+// 		return Order.find({ gameId: this.gameId});
+// };
 
 module.exports = {
   getOrderModel: function getOrderModel() {

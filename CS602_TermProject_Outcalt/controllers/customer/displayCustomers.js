@@ -10,11 +10,10 @@ module.exports = function displayCustomers(req, res, next) {
     let results = customers.map( (customer) => {
       return {
         id: customer._id,
-        name: customer.firstName,
-        description: customer.lastName,
-        price: customer.accountName,
-        quantity: customer.address,
-        orders: customer.orders
+        firstName: customer.firstName,
+        lastName: customer.lastName,
+        accountName: customer.accountName,
+        address: customer.address
       }
     });
       res.render('displayCustomersView', {title: "List of Customers", data: results})

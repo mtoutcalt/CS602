@@ -3,6 +3,7 @@ const router = express.Router();
 
 //modules
 const displayCustomers = require("./displayCustomers");
+const displayCustomerOrders = require("./displayCustomerOrders");
 const addCustomer = require("./addCustomer");
 const saveCustomer = require("./saveCustomer");
 const editCustomer = require("./editCustomer");
@@ -10,6 +11,8 @@ const saveCustomerAfterEdit = require("./saveCustomerAfterEdit");
 const deleteCustomer = require("./deleteCustomer");
 
 router.get('/customers', displayCustomers);
+
+router.get('/customers/orders/:id', displayCustomerOrders);
 
 router.get('/customers/add', addCustomer);
 router.post('/customers/add', saveCustomer);

@@ -7,17 +7,16 @@
         <th>Customer Last Name</th>
         <th>Customer Account Name</th>
         <th>Customer Address</th>
-        <th>Customer Order</th>
+
       </tr>
     </thead>
     <tbody>
       {{#each data}}
         <tr>
-          <td>{{this.firstName}}</td>
-          <td>{{this.lastName}}</td>
+          <td><{{this.firstName}}</td>
+          <td><a href="/customers/orders/{{this.id}}">{{this.lastName}}</a></td>
           <td>{{this.accountName}}</td>
           <td>{{this.address}}</td>
-          <td>{{this.orders}}</td>
 
           <td>
             <a href="/customers/edit/{{this.id}}">Edit</a>

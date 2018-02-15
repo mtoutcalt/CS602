@@ -21,9 +21,9 @@ let customerSchema = new Schema({
 	address: String
 });
 
-customerSchema.methods.getOrders = function() {
-		return Order.find({ customerId: this._id});
-};
+// customerSchema.methods.getOrders = function() {
+// 		return Order.find({ customerId: this._id});
+// };
 
 
 module.exports = {
