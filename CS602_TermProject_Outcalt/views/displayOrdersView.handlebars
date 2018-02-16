@@ -14,7 +14,13 @@
         <tr>
           <td>{{this.id}}</td>
           <td>{{this.created}}</td>
-          <td>{{this.game}}</td>
+          <td>
+            <ul>
+              {{#each this.game}}
+                <li>{{this.name}}</li>
+              {{/each}}
+            </ul>
+          </td>
           <td>{{this.orderNumber}}</td>
           <td>
             <a href="/orders/edit/{{this.id}}">Edit</a>

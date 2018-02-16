@@ -85,16 +85,20 @@ function loadModelData() {
 
   game3.save( (err) => {
     if (err) throw err;
-
-    console.log(game3);
-    let order = new Order({
+    let order1 = new Order({
     	created: new Date(),
-      orderNumber: "456",
-      gameId: game3._id,
+      gameId: [game1._id, game2._id],
       customerId: customer1._id
     });
 
-    order.save( (err) => {
+    let order2 = new Order({
+    	created: new Date(),
+      gameId: [game2._id, game3._id],
+      customerId: customer1._id
+    });
+
+    order1.save();
+    order2.save( (err) => {
       if (err) throw err;
       console.log("Success!");
     });

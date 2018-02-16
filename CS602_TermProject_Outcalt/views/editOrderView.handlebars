@@ -1,0 +1,43 @@
+<div class="table-responsive">
+  <form method="post" action="/orders/edit/{{data.id}}">
+    <table class="table table-condensed">
+    <tbody>
+        <tr>
+          <th width="200">Order Id</th>
+          <td>{{data.id}}</td>
+        </tr>
+        <tr>
+          <th>Order - Customer</th>
+          <td>{{data.customer}}</td>
+        </tr>
+        <tr>
+          <th>Order Created </th>
+          <td>{{data.created}}</td>
+        </tr>
+        <tr>
+          <th>Order Number </th>
+          <td><input type="text" name="orderNumber" required size="40" value="{{data.orderNumber}}"></td>
+        </tr>
+
+        <tr>
+          <th>Order - Games Purchased </th>
+        </tr>
+        <tr>
+          {{#each data.games}}
+            <td><input type="text" name="gameName" required size="40" value="{{this.name}}"></td>
+          {{/each}}
+        </tr>
+    </tbody>
+
+      <tfooter>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Save" class="btn btn-success">
+            <input type="button" value="Cancel" class="btn btn-danger cancel" onclick="cancelOrderAdd()">
+          </td>
+        </tr>
+      </tfooter>
+    </table>
+  </form>
+</div>

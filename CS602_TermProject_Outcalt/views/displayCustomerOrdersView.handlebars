@@ -6,6 +6,7 @@
         <th>Order ID</th>
         <th>Order Date Created</th>
         <th>Order Number</th>
+        <th>Order Game Purchased</th>
       </tr>
     </thead>
     <tbody>
@@ -14,6 +15,19 @@
           <td>{{this.id}}</td>
           <td>{{this.created}}</td>
           <td>{{this.orderNumber}}</td>
+          <td>
+            <ul>
+              {{#each this.game}}
+                <li>{{this.name}}</li>
+              {{/each}}
+            </ul>
+          </td>
+
+          <td>
+            <a href="/orders/edit/{{this.id}}">Edit</a>
+            <a href="/orders/delete/{{this.id}}">Delete</a>
+          </td>
+
         </tr>
         {{/each}}
     </tbody>

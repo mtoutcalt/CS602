@@ -1,20 +1,22 @@
 const DB = require('../../models/orderModel.js');
 const Order = DB.getOrderModel();
 
-module.exports = function saveOrder(req, res, next) {
+const gameDB = require('../../models/gameModel.js');
+const Game = gameDB.getGameModel();
+
+const customerDB = require('../../models/customerModel.js');
+const Customer = customerDB.getCustomerModel();
+
+module.exports = async function saveOrder(req, res, next) {
   let id = req.params.id;
 
-  Order.findById(id, (err, order) => {
-    if (err) {
-      console.log("Error Selecting : %s ", err);
-    }
-    if (!order) {
-      return res.render('404');
-    }
+  //todo catch errors
+  // let asyncOrder = await Order.findById(id);
+  // let async
 
-    order.games = req.body.game; //get data from body of post
-    order.created = req.body.created;
     order.orderNumber = req.body.orderNumber;
+    // order.customerId = ;
+    // order.gameId = [];
 
     order.save( (err) => {
       if (err) {
@@ -23,5 +25,5 @@ module.exports = function saveOrder(req, res, next) {
       res.redirect('/orders');
     });
 
-  });
+  // });
 };

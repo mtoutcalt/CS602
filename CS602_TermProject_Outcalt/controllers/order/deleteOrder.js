@@ -20,7 +20,7 @@ module.exports = function deleteOrder(req, res, next) {
       if (err) {
         console.log("Error deleting : %s ", err);
       }
-      res.redirect('/orders');
+      res.redirect('/customers');
     });
   });
 };

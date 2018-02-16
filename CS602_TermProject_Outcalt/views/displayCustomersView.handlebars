@@ -1,6 +1,6 @@
 <div>
   <div class="table-responsive">
-    <table class="table table-condensed">
+    <table class="table table-condensed table-hover">
     <thead>
       <tr>
         <th>Customer First Name</th>
@@ -11,10 +11,11 @@
       </tr>
     </thead>
     <tbody>
+
       {{#each data}}
-        <tr>
-          <td><{{this.firstName}}</td>
-          <td><a href="/customers/orders/{{this.id}}">{{this.lastName}}</a></td>
+        <tr onclick="window.location='/customers/orders/{{this.id}}';">
+          <td>{{this.firstName}}</td>
+          <td>{{this.lastName}}</td>
           <td>{{this.accountName}}</td>
           <td>{{this.address}}</td>
 
@@ -24,6 +25,7 @@
           </td>
         </tr>
         {{/each}}
+
     </tbody>
 
       <tfooter>

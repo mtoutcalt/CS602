@@ -1,22 +1,25 @@
-const DB = require('../../models/orderModel.js');
-const Order = DB.getOrderModel();
+const orderDB = require('../../models/orderModel.js');
+const Order = orderDB.getOrderModel();
 
-module.exports = function editOrder(req, res, next) {
-  let id = req.params.id;
+const gameDB = require('../../models/gameModel.js');
+const Game = gameDB.getGameModel();
 
-  Order.findById(id, (err, order) => {
-    if (err) {
-      console.log("Error Selecting : %s ", err);
-    }
-    if (!order) {
-      return res.render('404');
-    }
+const customerDB = require('../../models/customerModel.js');
+const Customer = customerDB.getCustomerModel();
 
-    res.render('editOrderView', {title:"Edit Order",
-                                  data: { id: order._id,
-                                          games: order.game,
-                                          created: order.created,
-                                          orderNumber: order.orderNumber }
+module.exports = async function editOrder(req, res, next) {
+  let orderId = req.params.id;
+
+  let orderAsync = await Order.findById(orderId);
+  let customerAsync = await Customer.findById(orderAsync.customerId);
+  let gameArray = await Game.find({_id: orderAsync.gameId });
+
+  res.render('editOrderView', {title:"Edit Order",
+                                  data: { id: orderAsync._id,
+                                          games: gameArray,
+                                          created: orderAsync.created,
+                                          orderNumber: orderAsync.orderNumber,
+                                          customer: customerAsync.firstName}
                                       });
-  });
+
 };

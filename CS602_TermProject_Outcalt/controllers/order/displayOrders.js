@@ -9,11 +9,11 @@ module.exports = async function displayOrders(req, res, next) {
     let orderAsync = await Order.find({});
 
     let results = orderAsync.map( async (order) => {
-        let game = await Game.findById(order.gameId);
+        let gameArray = await Game.find({_id: order.gameId });
         return {
           id: order._id,
           created: order.created,
-          game: game.name,
+          game: gameArray,
           orderNumber: order.orderNumber
         }
     });

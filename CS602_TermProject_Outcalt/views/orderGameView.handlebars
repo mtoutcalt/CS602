@@ -1,0 +1,34 @@
+<div class="table-responsive">
+  <form method="post" action="/games/edit/{{data.id}}">
+    <table class="table table-condensed">
+    <tbody>
+        <tr>
+          <th width="200">Video Game Name: </th>
+          <td>{{data.name}}</td>
+        </tr>
+        <tr>
+          <th>Video Game Description: </th>
+          <td>{{data.description}}</td>
+        </tr>
+        <tr>
+          <th>Video Game Price: </th>
+          <td>{{data.price}}</td>
+        </tr>
+        <tr>
+          <th>Copies of Game to Purchase: </th>
+          <td><input type="text" name="gameQuantity" required size="40" value="1"></td>
+        </tr>
+    </tbody>
+
+      <tfooter>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Confirm Order" class="btn btn-success">
+            <input type="button" value="Cancel Order" class="btn btn-danger cancel" onclick="cancelGamePurchase()">
+          </td>
+        </tr>
+      </tfooter>
+    </table>
+  </form>
+</div>

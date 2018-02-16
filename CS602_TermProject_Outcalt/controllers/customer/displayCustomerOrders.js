@@ -1,8 +1,8 @@
 const DB = require('../../models/orderModel.js');
 const Order = DB.getOrderModel();
 
-// const DB = require('../../models/customerModel.js');
-// const Customer = DB.getCustomerModel();
+const gameDB = require('../../models/gameModel.js');
+const Game = gameDB.getGameModel();
 
 module.exports = async function displayCustomerOrders(req, res, next) {
 
@@ -11,9 +11,11 @@ module.exports = async function displayCustomerOrders(req, res, next) {
   let orderAsync = await Order.find({customerId: customerId});
 
   let results = orderAsync.map( async (order) => {
+    let gameArray = await Game.find({ _id: order.gameId});
     return {
       id: order._id,
       created: order.created,
+      game: gameArray,
       orderNumber: order.orderNumber
     }
   });

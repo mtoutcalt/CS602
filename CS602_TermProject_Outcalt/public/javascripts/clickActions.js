@@ -21,3 +21,7 @@ function cancelCustomerAdd() {
 function cancelOrderAdd() {
   window.location.href = '/orders';
 }
+
+function cancelGamePurchase() {
+  window.location.href = '/store';
+}

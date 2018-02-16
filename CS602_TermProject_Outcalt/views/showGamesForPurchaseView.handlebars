@@ -1,0 +1,30 @@
+<div>
+  <div class="table-responsive">
+    <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Video Game Name</th>
+        <th>Video Game Description</th>
+        <th>Video Game Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each data}}
+        <tr>
+          <td>{{this.name}}</td>
+          <td>{{this.description}}</td>
+          <td>{{this.price}}</td>
+
+          <td>
+            <form action="/games/order/{{this.id}}">
+                <input type="submit" value="ORDER" />
+            </form>
+            <!-- <a href="/games/edit/{{this.id}}">Order</a> -->
+          </td>
+        </tr>
+        {{/each}}
+    </tbody>
+
+    </table>
+  </div>
+</div>
