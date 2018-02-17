@@ -7,7 +7,6 @@ xml and json rest apis for:
     -products within price range
 
 customer
-  - homepage - list of games selling - and let customer order game with quantity - decrement quantity and check for 0 and disallow if 0
   - search by game name and game description
   -
 
@@ -23,3 +22,6 @@ admin interface
   -show list of all customers
   -select customer to show orders
   -delete existing orders
+
+  customer
+    - homepage - list of games selling - and let customer order game with quantity - decrement quantity and check for 0 and disallow if 0

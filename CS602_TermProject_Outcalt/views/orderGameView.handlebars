@@ -1,5 +1,5 @@
 <div class="table-responsive">
-  <form method="post" action="/games/edit/{{data.id}}">
+  <form method="post" action="/games/order/{{data.id}}">
     <table class="table table-condensed">
     <tbody>
         <tr>
@@ -18,6 +18,9 @@
           <th>Copies of Game to Purchase: </th>
           <td><input type="text" name="gameQuantity" required size="40" value="1"></td>
         </tr>
+        <input type="hidden" name="gameDescription" value="{{data.description}}">
+        <input type="hidden" name="gameName" value="{{data.name}}">
+        <input type="hidden" name="gamePrice" value="{{data.price}}">
     </tbody>
 
       <tfooter>
