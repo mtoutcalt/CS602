@@ -1,16 +1,16 @@
 admin
   - update customer and game models when order is updated -- saveOrderAfterEdit
 
+
 xml and json rest apis for:
-    -list of products
-    -products matching the specified name
-    -products within price range
+
 
 customer
-  - search by game name and game description
-  -
+  -allow ordering of game
+  -make shopping cart to add to order and checkout
+  -show orders from this interface -
 
-
+misc - navigation
 
 
 ======
@@ -23,5 +23,12 @@ admin interface
   -select customer to show orders
   -delete existing orders
 
-  customer
-    - homepage - list of games selling - and let customer order game with quantity - decrement quantity and check for 0 and disallow if 0
+customer
+  - homepage - list of games selling - and let customer order game with quantity - decrement quantity and check for 0 and disallow if 0
+  - search by game name and game description
+
+
+xml and json rest apis for:
+   -list of products
+   -products matching the specified name
+   -products within price range

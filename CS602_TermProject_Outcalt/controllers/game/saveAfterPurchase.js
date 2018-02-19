@@ -1,44 +1,56 @@
-const DB = require('../../models/gameModel.js');
-const Game = DB.getGameModel();
+const gameDB = require('../../models/gameModel.js');
+const Game = gameDB.getGameModel();
+
+const orderDB = require('../../models/orderModel.js');
+const Order = orderDB.getOrderModel();
+
+const customerDB = require('../../models/customerModel.js');
+const Customer = customerDB.getCustomerModel();
 
 /////SAVE ORDER by decrementing the quantity and checking for 0
 
-module.exports = function saveAfterPurchase(req, res, next) {
-  let id = req.params.id;
+module.exports = async function saveAfterPurchase(req, res, next) {
+    let id = req.params.id;
 
-  Game.findById(id, (err, game) => {
-    if (err) {
-      console.log("Error Selecting : %s ", err);
-    }
-    if (!game) {
-      return res.render('404');
-    }
+    //update gmae after order
+    let updatedGame = await Game.findById(id);
 
+    updatedGame.name = req.body.gameName;
+    updatedGame.description = req.body.gameDescription;
+    updatedGame.price = req.body.gamePrice;
 
-    game.name = req.body.gameName; //get data from body of post
-    game.description = req.body.gameDescription;
-    game.price = req.body.gamePrice;
-
-    let currentQuantity = game.quantity;
-    console.log("CURRENT QUANT: " + currentQuantity);
+    let currentQuantity = updatedGame.quantity;
+    // console.log("CURRENT QUANT: " + currentQuantity);
 
     let copiesLeft = currentQuantity - req.body.gameQuantity;
-    console.log("COPIES LEFT: " + copiesLeft);
+    // console.log("COPIES LEFT: " + copiesLeft);
 
     if (copiesLeft < 0) {
-      console.log("NO COPIES LEFT");
+      // console.log("NO COPIES LEFT");
       return res.render('outOfStockView', {title: "Out of Stock", data: {copiesLeft: currentQuantity}});
     }
 
-    game.quantity = copiesLeft;
+    updatedGame.quantity = copiesLeft;
+    await updatedGame.save();
 
+    let customer = new Customer({
+      firstName: 'Mark',
+      lastName: 'Shopper',
+      accountName: 'mtshopper22',
+      address: '123 Main Street'
+    });
+    await customer.save();
 
-    game.save( (err) => {
-      if (err) {
-        console.log("Error updating : %s ", err);
-      }
-      res.redirect('/store');
+    //create new order
+    let order = new Order({
+    	created: new Date(),
+      gameId: [updatedGame._id],
+      gameQuantity: [req.body.gameQuantity],
+      customerId: customer._id
     });
 
-  });
+    await order.save();
+
+
+    res.redirect('/store');
 };

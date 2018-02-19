@@ -4,9 +4,9 @@ var Order = DB.getOrderModel();
 module.exports = function deleteOrder(req, res, next) {
   let id = req.params.id;
 
-  // Order.remove({}, (err, order) => {
-  //   console.log("All Deleted");
-  // });
+  Order.remove({}, (err, order) => {
+    console.log("All Deleted");
+  });
 
   Order.findById(id, (err, order) => {
     if (err) {
@@ -20,7 +20,7 @@ module.exports = function deleteOrder(req, res, next) {
       if (err) {
         console.log("Error deleting : %s ", err);
       }
-      res.redirect('/customers');
+      res.redirect('/orders');
     });
   });
 };

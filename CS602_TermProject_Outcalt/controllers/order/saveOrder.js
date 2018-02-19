@@ -5,6 +5,7 @@ module.exports = function saveOrder(req, res, next) {
 
     let order = new Order({
       games: req.body.game,
+      gameQuantity: req.body.gameQuantity,
       created: req.body.created,
       orderNumber: req.body.orderNumber
      });

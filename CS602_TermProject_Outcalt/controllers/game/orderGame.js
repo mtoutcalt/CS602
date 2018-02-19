@@ -12,7 +12,7 @@ module.exports = function orderGame(req, res, next) {
       return res.render('404');
     }
 
-    res.render('orderGameView', {title:"Edit Video Game",
+    res.render('orderGameView', {title:"Order Video Game",
                                   data: {id: game._id,
                                           name: game.name,
                                           description: game.description,

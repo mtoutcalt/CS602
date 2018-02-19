@@ -18,7 +18,8 @@ let orderSchema = new Schema({
 	created: Date,
 	orderNumber: Number,
   customerId: String,
-  gameId: [String]
+  gameId: [String],
+	gameQuantity: [String]
 });
 
 

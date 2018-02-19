@@ -1,4 +1,31 @@
 <div>
+
+<div class="col-md-4 col-md-offset-4">
+  <form action="/store">
+    <div class= "form-inline align-items-center">
+        Search By Name:<br>
+        <input type="text" name="gameName" class="form-control">
+        <input type="submit" value="Search" class="form-control">
+    </div>
+  </form><br>
+
+  <form action="/store">
+    <div class="form-inline align-items-center">
+        Search By Description:<br>
+        <input type="text" name="gameDescription" class="form-control">
+        <input type="submit" value="Search" class="form-control">
+    </div>
+  </form>
+</div>
+
+<br><br><br><br><br><br><br><br> <!--todo - find a better way to do this stlying-->
+<div class="form-group" style="display:block;text-align:center;">
+  <form action="/store">
+    <input type="submit" value="Clear Search" class="btn btn-primary"/>
+  </form>
+</div>
+
+  <form action="/games/new_order" method="post" class="form-group">
   <div class="table-responsive">
     <table class="table table-condensed">
     <thead>
@@ -6,25 +33,35 @@
         <th>Video Game Name</th>
         <th>Video Game Description</th>
         <th>Video Game Price</th>
+        <th>BUY</th>
+        <th>How Many:</th>
       </tr>
     </thead>
     <tbody>
       {{#each data}}
         <tr>
           <td>{{this.name}}</td>
+          <!-- <input type="hidden" name="gameName" value={{this.name}}> -->
           <td>{{this.description}}</td>
+          <!-- <input type="hidden" name="gameDescription" value={{this.description}}> -->
           <td>{{this.price}}</td>
+          <!-- <input type="hidden" name="gamePrice" value={{this.price}}> -->
 
           <td>
-            <form action="/games/order/{{this.id}}">
-                <input type="submit" value="ORDER" />
-            </form>
-            <!-- <a href="/games/edit/{{this.id}}">Order</a> -->
+            <input type="checkbox" name="gameId" value={{this.id}}>
           </td>
+          <td>
+            <input type="text" name="gameQuantity">
+          </td>
+
         </tr>
+
         {{/each}}
     </tbody>
 
     </table>
   </div>
+  <input type="submit" value="CHECKOUT" class="btn-lg btn-success" style="margin: 0 auto;"/>
+
+  </form>
 </div>

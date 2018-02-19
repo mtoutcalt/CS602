@@ -1,0 +1,39 @@
+<div>
+  <div class="table-responsive">
+    <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Order - ID</th>
+        <th>Order - Date Created</th>
+        <th>Order - Games</th>
+        <th>Order - Game Quantity</th>
+        <th>Order - Number</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>{{data.id}}</td>
+          <td>{{data.created}}</td>
+          <td>
+            <ul>
+              {{#each gameData}}
+                <li>{{this.name}}</li>
+              {{/each}}
+            </ul>
+          </td>
+          <td>
+            <ul>
+              {{#each data.gameQuantity}}
+                <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </td>
+          <td>{{data.orderNumber}}</td>
+        </tr>
+    </tbody>
+    </table>
+  </div>
+  <form>
+    <button class="btn btn-primary" formaction="/store">Go Back to the Store</button>
+</form>
+</div>

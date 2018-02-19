@@ -17,6 +17,7 @@ module.exports = async function editOrder(req, res, next) {
   res.render('editOrderView', {title:"Edit Order",
                                   data: { id: orderAsync._id,
                                           games: gameArray,
+                                          gameQuantity: orderAsync.gameQuantity,
                                           created: orderAsync.created,
                                           orderNumber: orderAsync.orderNumber,
                                           customer: customerAsync.firstName}

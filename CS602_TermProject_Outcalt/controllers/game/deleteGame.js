@@ -5,9 +5,9 @@ module.exports = function deleteGame(req, res, next) {
   let id = req.params.id;
 
 
-  // Game.remove({}, (err, game) => {
-  //   console.log("All Deleted");
-  // });
+  Game.remove({}, (err, game) => {
+    console.log("All Deleted");
+  });
 
   Game.findById(id, (err, game) => {
     if (err) {

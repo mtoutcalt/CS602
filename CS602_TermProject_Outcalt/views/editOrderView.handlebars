@@ -24,7 +24,15 @@
         </tr>
         <tr>
           {{#each data.games}}
-            <td><input type="text" name="gameName" required size="40" value="{{this.name}}"></td>
+              <td><input type="checkbox" name="gameName" value="{{this.name}}">{{this.name}}</td>
+          {{/each}}
+        </tr>
+        <tr>
+          <th>Order - Game Quantity </th>
+        </tr>
+        <tr>
+          {{#each data.gameQuantity}}
+              <td><input type="text" name="gameQuantity" value="{{this}}"></td>
           {{/each}}
         </tr>
     </tbody>

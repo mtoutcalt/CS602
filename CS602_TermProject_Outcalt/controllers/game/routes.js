@@ -12,8 +12,15 @@ const editGame = require("./editGame");
 const saveAfterEdit = require("./saveAfterEdit");
 const orderGame = require("./orderGame");
 const saveAfterPurchase = require("./saveAfterPurchase");
+const newOrder = require("./newOrder");
 
 const deleteGame = require("./deleteGame");
+
+//API
+const showGamesApi = require("./api/showGamesApi");
+const showGamesByNameApi = require("./api/showGamesByNameApi");
+const showGamesByDescriptionApi = require("./api/showGamesByDescriptionApi");
+const showGamesByPriceApi = require("./api/showGamesByPriceApi");
 
 router.get('/', (req, res, next) => {
   res.redirect('/games');
@@ -29,8 +36,15 @@ router.get('/games/edit/:id', editGame);
 router.post('/games/edit/:id', saveAfterEdit);
 
 router.get('/games/order/:id', orderGame);
-router.post('/games/order/:id', saveAfterPurchase);
+// router.post('/games/order/:id', saveAfterPurchase);
+router.post('/games/new_order', newOrder);
 
 router.get('/games/delete/:id', deleteGame);
+
+router.get('/api/games/price', showGamesByPriceApi);
+router.get('/api/games', showGamesApi);
+router.get('/api/games/:name', showGamesByNameApi);
+router.get('/api/games/description/:description', showGamesByDescriptionApi);
+
 
 module.exports = router;

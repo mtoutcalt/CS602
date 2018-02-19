@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const handlebars = require('express-handlebars');
 const mongoose = require('mongoose');
+const helmet = require('helmet');
 
 var gameDB = require('./models/gameModel.js');
 var customerDB = require('./models/customerModel.js');
@@ -9,6 +10,7 @@ var orderDB = require('./models/orderModel.js');
 
 
 const app = express();
+app.use(helmet());
 
 app.engine('handlebars', handlebars({defaultLayout: 'main_logo'}));
 app.set('view engine', 'handlebars');
@@ -88,12 +90,14 @@ function loadModelData() {
     let order1 = new Order({
     	created: new Date(),
       gameId: [game1._id, game2._id],
+      gameQuantity: [2, 1],
       customerId: customer1._id
     });
 
     let order2 = new Order({
     	created: new Date(),
       gameId: [game2._id, game3._id],
+      gameQuantity: [3, 1],
       customerId: customer1._id
     });
 

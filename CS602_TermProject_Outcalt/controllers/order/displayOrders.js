@@ -14,6 +14,7 @@ module.exports = async function displayOrders(req, res, next) {
           id: order._id,
           created: order.created,
           game: gameArray,
+          gameQuantity: order.gameQuantity,
           orderNumber: order.orderNumber
         }
     });
