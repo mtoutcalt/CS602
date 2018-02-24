@@ -14,13 +14,27 @@ module.exports = async function editOrder(req, res, next) {
   let customerAsync = await Customer.findById(orderAsync.customerId);
   let gameArray = await Game.find({_id: orderAsync.gameId });
 
+  let allGamesArray = await Game.find({});
+
+  
+
+
   res.render('editOrderView', {title:"Edit Order",
                                   data: { id: orderAsync._id,
+                                          allGames: allGamesArray,
                                           games: gameArray,
                                           gameQuantity: orderAsync.gameQuantity,
                                           created: orderAsync.created,
                                           orderNumber: orderAsync.orderNumber,
                                           customer: customerAsync.firstName}
-                                      });
+                                      ,
+                                    helpers: {
+                                      times: function(n, block) {
+                                        var accum = '';
+                                        for(var i = 0; i < n; ++i)
+                                            accum += block.fn(i);
+                                        return accum; }
+                                      }
+                                    });
 
 };

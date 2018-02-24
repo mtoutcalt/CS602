@@ -1,0 +1,38 @@
+<div class="table-responsive">
+  <form method="post" action="/customers/edit/{{data.id}}">
+    <table class="table table-condensed">
+    <tbody>
+        <tr>
+          <th width="200">Customer - Id </th>
+          <td>{{data.id}}</td>
+        </tr>
+        <tr>
+          <th>Customer - First Name</th>
+          <td><input type="text" name="firstName" required size="40" value="{{data.firstName}}"></td>
+        </tr>
+        <tr>
+          <th>Customer - Last Name </th>
+          <td><input type="text" name="lastName" required size="40" value="{{data.lastName}}"></td>
+        </tr>
+        <tr>
+          <th>Customer - Account Name </th>
+          <td><input type="text" name="accountName" required size="40" value="{{data.accountName}}"></td>
+        </tr>
+        <tr>
+          <th>Customer - Address </th>
+          <td><input type="text" name="address" required size="40" value="{{data.address}}"></td>
+        </tr>
+    </tbody>
+
+      <tfooter>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Save" class="btn btn-success">
+            <input type="button" value="Cancel" class="btn btn-danger cancel" onclick="cancelCustomerAdd()">
+          </td>
+        </tr>
+      </tfooter>
+    </table>
+  </form>
+</div>

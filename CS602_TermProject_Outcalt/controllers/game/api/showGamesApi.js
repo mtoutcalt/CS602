@@ -1,5 +1,7 @@
 var gameDB = require('../../../models/gameModel.js');
 var Game = gameDB.getGameModel();
+const xml = require('xml');
+const o2xml = require('object-to-xml');
 
 module.exports = async function showGamesApi(req, res, next) {
 
@@ -11,21 +13,20 @@ module.exports = async function showGamesApi(req, res, next) {
       },
 
       'application/xml' : function() {
-        let gameXmlArray = [];
-        games.map( (game) => {
            let gameXml =
-              '<?xml version="1.0"?>' +
-              '<game id="' + game.id + '">' +
-              '  <name>' + game.name + '</name>' +
-              '  <description>' + game.description + '</description>' +
-              '  <price>' + game.price + '</price>' +
-              '  <quantity>' + game.quantity + '</quantity>' +
-              '</game>';
-           gameXmlArray.push(gameXml);
-         });
+              '<?xml version="1.0"?>\n<games>' +
+              games.map( (game) => {
+                return '<game id="' + game.id + '">' +
+                '  <name>' + game.name + '</name>' +
+                '  <description>' + game.description + '</description>' +
+                '  <price>' + game.price + '</price>' +
+                '  <quantityLeft>' + game.quantityLeft + '</quantityLeft>' +
+                '  <totalQuantity>' + game.totalQuantity + '</totalQuantity>' +
+                '</game>';
+              }).join('\n') + '\n</games>\n';
          res.type('application/xml');
-         res.send(gameXmlArray);
-      },
+         res.send(gameXml);
+    },
 
       'default': function() {
         res.status(404);

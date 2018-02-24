@@ -1,17 +1,14 @@
 admin
   - update customer and game models when order is updated -- saveOrderAfterEdit
 
-
-xml and json rest apis for:
-
-
 customer
-  -allow ordering of game
-  -make shopping cart to add to order and checkout
-  -show orders from this interface -
+  - fix so current customer is used and can see their history instead of hardcoded link
 
-misc - navigation
+bug -
+  -update quantity when editing order
+  -move api endpoints to their own files?
 
+  -if game is deleted then order removes mention of game
 
 ======
 Done

@@ -16,7 +16,8 @@
         </tr>
         <tr>
           <th>Order Number </th>
-          <td><input type="text" name="orderNumber" required size="40" value="{{data.orderNumber}}"></td>
+          <td>{{data.orderNumber}}</td>
+          <input type="hidden" name="orderId" value="{{data.id}}">
         </tr>
 
         <tr>
@@ -24,7 +25,7 @@
         </tr>
         <tr>
           {{#each data.games}}
-              <td><input type="checkbox" name="gameName" value="{{this.name}}">{{this.name}}</td>
+              <td><input type="text" name="gameName" value="{{this.name}}"></td>
           {{/each}}
         </tr>
         <tr>
@@ -32,7 +33,8 @@
         </tr>
         <tr>
           {{#each data.gameQuantity}}
-              <td><input type="text" name="gameQuantity" value="{{this}}"></td>
+              <td><input type="text" name="newGameQuantity" value="{{this}}"></td>
+              <input type="hidden" name="oldGameQuantity" value="{{this}}">
           {{/each}}
         </tr>
     </tbody>
@@ -49,3 +51,10 @@
     </table>
   </form>
 </div>
+
+<table class="table table-striped">
+  <tr><th>Game Inventory</th></tr>
+  {{#each data.allGames}}
+    <tr><td>{{this.name}}</td></tr>
+  {{/each}}
+</table>

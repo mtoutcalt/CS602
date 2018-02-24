@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const handlebars = require('express-handlebars');
 const mongoose = require('mongoose');
 const helmet = require('helmet');
+var request = require('request');
 
 var gameDB = require('./models/gameModel.js');
 var customerDB = require('./models/customerModel.js');
@@ -28,6 +29,152 @@ app.use('/', gameRoutes);
 app.use('/', customerRoutes);
 app.use('/', orderRoutes);
 
+
+//expose API
+////////////////
+
+var optionsAllGames = {
+  url: 'http://localhost:3000/api/games',
+  headers: {
+    'Accept': 'application/json'
+  }
+};
+
+app.get('/getGamesApi/json', function(req, res) {
+    request.get(optionsAllGames, (error, response, body) => {
+      console.log("CALLED");
+      if (!error && response.statusCode == 200) {
+        res.json(JSON.parse(body));
+      } else {
+        console.log("Call failed");
+      }
+    });
+});
+
+var optionsAllGamesXml = {
+  url: 'http://localhost:3000/api/games',
+  headers: {
+    'Accept': 'application/xml'
+  }
+};
+app.get('/getGamesApi/xml', function(req, res) {
+    request.get(optionsAllGamesXml, (error, response, body) => {
+      console.log("CALLED");
+      if (!error && response.statusCode == 200) {
+        res.type('application/xml');
+        res.send(body);
+      } else {
+        console.log("Call failed");
+      }
+    });
+});
+
+app.get('/getGamesPriceApi/json', function(req, res) {
+    let optionsGameByPrice = {
+      url: urlString = 'http://localhost:3000/api/games/price?maxPrice=' + req.query.maxPrice + '&minPrice=' + req.query.minPrice,
+      headers: {
+        'Accept': 'application/json'
+      }
+    };
+
+    request.get(optionsGameByPrice, (error, response, body) => {
+      if (!error && response.statusCode == 200) {
+        res.json(JSON.parse(body));
+      } else {
+        console.log("Call failed");
+      }
+    });
+});
+
+app.get('/getGamesPriceApi/xml', function(req, res) {
+    let optionsGameByPrice = {
+      url: urlString = 'http://localhost:3000/api/games/price?maxPrice=' + req.query.maxPrice + '&minPrice=' + req.query.minPrice,
+      headers: {
+        'Accept': 'application/xml'
+      }
+    };
+
+    request.get(optionsGameByPrice, (error, response, body) => {
+      if (!error && response.statusCode == 200) {
+        res.type('application/xml');
+        res.send(body);
+      } else {
+        console.log("Call failed");
+      }
+    });
+});
+
+app.get('/getGamesNameApi/json', function(req, res) {
+    let optionsGameByName = {
+      url: urlString = 'http://localhost:3000/api/games/' + req.query.name,
+      headers: {
+        'Accept': 'application/json'
+      }
+    };
+
+    request.get(optionsGameByName, (error, response, body) => {
+      if (!error && response.statusCode == 200) {
+        res.json(JSON.parse(body));
+      } else {
+        console.log("Call failed");
+      }
+    });
+});
+
+app.get('/getGamesNameApi/xml', function(req, res) {
+    let optionsGameByName = {
+      url: urlString = 'http://localhost:3000/api/games/' + req.query.name,
+      headers: {
+        'Accept': 'application/xml'
+      }
+    };
+
+    request.get(optionsGameByName, (error, response, body) => {
+      if (!error && response.statusCode == 200) {
+        res.type('application/xml');
+        res.send(body);
+      } else {
+        console.log("Call failed");
+      }
+    });
+});
+
+app.get('/getGamesDescriptionApi/json', function(req, res) {
+    let optionsGameByDescription = {
+      url: urlString = 'http://localhost:3000/api/games/description/' + req.query.description,
+      headers: {
+        'Accept': 'application/json'
+      }
+    };
+
+    request.get(optionsGameByDescription, (error, response, body) => {
+      if (!error && response.statusCode == 200) {
+        res.json(JSON.parse(body));
+      } else {
+        console.log("Call failed");
+      }
+    });
+});
+
+app.get('/getGamesDescriptionApi/xml', function(req, res) {
+    let optionsGameByDescription = {
+      url: urlString = 'http://localhost:3000/api/games/description/' + req.query.description,
+      headers: {
+        'Accept': 'application/xml'
+      }
+    };
+
+    request.get(optionsGameByDescription, (error, response, body) => {
+      if (!error && response.statusCode == 200) {
+        res.type('application/xml');
+        res.send(body);
+      } else {
+        console.log("Call failed");
+      }
+    });
+});
+//////////////
+
 app.use( (req, res) => {
   res.status(404);
   res.render('404');
@@ -35,18 +182,18 @@ app.use( (req, res) => {
 
 //this is the entry point to the project - node server.js
 app.listen(3000, () => {
-  loadModelData();
+  // loadModelData();
   console.log('http://localhost:3000');
 });
 
 
 function loadModelData() {
-  console.log("LOAD");
   let Game = gameDB.getGameModel();
   let Customer = customerDB.getCustomerModel();
   let Order = orderDB.getOrderModel();
 
   let customer1 = new Customer({
+    id: 123,
     firstName: 'Mark',
     lastName: 'Thomas',
     accountName: 'mt',
@@ -65,24 +212,27 @@ function loadModelData() {
   let game1 = new Game({
   	name: 'Superman 64',
     description: 'A terrible game on the Nintendo 64',
-  	price: '30',
-  	quantity: '8'
+  	price: 30,
+  	quantityLeft: 8,
+    totalQuantity: 20
   });
   game1.save();
 
   let game2 = new Game({
   	name: 'World of Warcraft',
     description: 'A massively multiplayer role-playing game on the PC',
-  	price: '40',
-  	quantity: '15'
+  	price: 40,
+  	quantityLeft: 15,
+    totalQuantity: 15
   });
   game2.save();
 
   let game3 = new Game({
   	name: 'Super Mario Odyssey',
     description: 'A 3D platforming game featuring Mario on the Nintendo Switch',
-  	price: '60',
-  	quantity: '20'
+  	price: 60,
+  	quantityLeft: 20,
+    totalQuantity: 20
   });
 
   game3.save( (err) => {
@@ -109,9 +259,3 @@ function loadModelData() {
     console.log("Success!");
   });
 };
-
-
-
-// https://coursework.vschool.io/mongoose-schemas
-// https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose
-// http://mongoosejs.com/docs/populate.html

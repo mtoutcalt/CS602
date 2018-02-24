@@ -14,11 +14,10 @@ module.exports = function editCustomer(req, res, next) {
 
     res.render('editCustomerView', {title:"Edit Customer",
                                   data: {id: customer._id,
-                                          name: customer.firstName,
-                                          description: customer.lastName,
-                                          price: customer.accountName,
-                                          quantity: customer.address,
-                                          orders: customer.orders }
+                                          firstName: customer.firstName,
+                                          lastName: customer.lastName,
+                                          accountName: customer.accountName,
+                                          address: customer.address }
                                       });
   });
 };

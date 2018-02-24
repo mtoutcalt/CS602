@@ -15,6 +15,7 @@ const saveAfterPurchase = require("./saveAfterPurchase");
 const newOrder = require("./newOrder");
 
 const deleteGame = require("./deleteGame");
+const admin = require("./admin");
 
 //API
 const showGamesApi = require("./api/showGamesApi");
@@ -40,6 +41,8 @@ router.get('/games/order/:id', orderGame);
 router.post('/games/new_order', newOrder);
 
 router.get('/games/delete/:id', deleteGame);
+
+router.get('/admin', admin);
 
 router.get('/api/games/price', showGamesByPriceApi);
 router.get('/api/games', showGamesApi);

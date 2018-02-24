@@ -14,7 +14,8 @@ module.exports = function displayGames(req, res, next) {
             name: game.name,
             description: game.description,
             price: game.price,
-            quantity: game.quantity
+            totalQuantity: game.totalQuantity,
+            quantityLeft: game.quantityLeft
           }
         });
           res.render('displayGamesView', {title: "List of Video Games", data: results})

@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 // const dbUrl = 'mongodb://' + credentials.username +
 // 	':' + credentials.password + '@' + credentials.host + ':' + credentials.port + '/' + credentials.database;
 
-
 const dbUrl = 'mongodb://' + '@' + credentials.host + ':' + credentials.port + '/' + credentials.database;
 
 let connection = null;
@@ -14,8 +13,9 @@ let Schema = mongoose.Schema;
 let gameSchema = new Schema({
   name: String,
   description: String,
-	price: String, 	////////////////////TODO make this a number
-	quantity: String
+	price: Number,
+	totalQuantity: Number,
+  quantityLeft: Number
 });
 
 // gameSchema.methods.getGames = function() {

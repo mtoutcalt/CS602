@@ -8,30 +8,76 @@ const customerDB = require('../../models/customerModel.js');
 const Customer = customerDB.getCustomerModel();
 
 module.exports = async function saveOrder(req, res, next) {
-  let id = req.params.id;
+
+  let orderIdInput = req.body.orderId;
+  let gameNameInput = req.body.gameName;
+  let gameQuantityInput = req.body.newGameQuantity;
+
+  let newQuantityArray = [];
+
+  //make sure the quantity is an array even if its for a single game
+  if (typeof gameQuantityInput === 'string') {
+    newQuantityArray.push(gameQuantityInput);
+  } else {
+    newQuantityArray = gameQuantityInput;
+  }
+
+  for(var i=0; i < newQuantityArray.length; i++) {
+    let asyncGame = await Game.findOne({ 'name': gameNameInput[i]});
+    let copiesInStock = asyncGame.quantity;
+
+    let quantDiff = (copiesInStock - gameQuantityInput[i]);
+    console.log("IN STOCK: " + copiesInStock);
+    console.log("INPUT QUANT: " + gameQuantityInput[i]);
+    console.log("QUANT DIFF: " + quantDiff);
+    if (quantDiff < 0 ) {
+      return res.render('outOfStockView', {title: "Out of Stock", data: {copiesLeft: copiesInStock}});
+    } else {
+      asyncGame.quantity = quantDiff;
+      asyncGame.save();
+    }
+  }
+
+
+  // console.log("new QUANT: " + req.body.newGameQuantity);
+  // console.log("old QUANT: " + req.body.oldGameQuantity);
 
   //todo catch errors
-  let asyncOrder = await Order.findById(id);
+  let asyncOrder = await Order.findById(orderIdInput);
 
-  games = [];
+  let gameNameArray = [];
+  if (typeof gameNameInput === 'string') {
+    gameNameArray.push(gameNameInput);
+  } else {
+    gameNameArray = gameNameInput;
+  }
 
-  asyncOrder.gameId.map( async (game) => {
-      let asyncGame = await Game.findById(game.id);
-      console.log("Found game: " + asyncGame.name);
-      games.push(asyncGame);
+  let gamePromise = gameNameArray.map( async (gameName) => {
+      try {
+          let asyncGame = await Game.findOne({ 'name': gameName});
+
+
+          // gamesIds.push(asyncGame.id);
+          return asyncGame.id;
+      } catch(err) {
+        console.log("Game Doesn't Exist");
+      }
   });
 
-    order.orderNumber = req.body.orderNumber;
-    order.created = req.body.created;
-    order.customerId = req.body.customerId;
-    order.gameId = [];
+  Promise.all(gamePromise).then( (gameIds) => {
 
-    order.save( (err) => {
+    asyncOrder.gameId = gameIds;
+    asyncOrder.gameQuantity = gameQuantityInput;
+
+    asyncOrder.save( (err) => {
       if (err) {
         console.log("Error updating : %s ", err);
       }
       res.redirect('/orders');
     });
 
-  // });
+
+  });
+
+
 };

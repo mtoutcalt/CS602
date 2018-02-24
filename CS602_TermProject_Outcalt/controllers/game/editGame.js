@@ -17,7 +17,8 @@ module.exports = function editGame(req, res, next) {
                                           name: game.name,
                                           description: game.description,
                                           price: game.price,
-                                          quantity: game.quantity}
+                                          totalQuantity: game.totalQuantity,
+                                          quantityLeft: game.quantityLeft }
                                       });
   });
 };

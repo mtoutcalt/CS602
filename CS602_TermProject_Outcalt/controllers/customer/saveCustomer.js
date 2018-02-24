@@ -8,7 +8,6 @@ module.exports = function saveCustomer(req, res, next) {
       lastName: req.body.lastName,
       accountName: req.body.accountName,
       address: req.body.address,
-      orders: req.body.orders
      });
 
      customer.save( (err) => {

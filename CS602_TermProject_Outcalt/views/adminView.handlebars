@@ -1,0 +1,78 @@
+<div style="text-align: center;">
+
+<h1>Admin Management</h1>
+
+  <h2>Manage Games</h2>
+  <form action="/games" >
+    <input class="btn btn-success" type="submit" value="Get Games" />
+  </form>
+
+  <h2>Manage Customers</h2>
+  <form action="/customers" >
+    <input class="btn btn-success" type="submit" value="Get Customers" />
+  </form>
+
+  <h2>Manage Orders</h2>
+  <form action="/orders" >
+    <input class="btn btn-success" type="submit" value="Get Orders" />
+  </form>
+
+<hr>
+<h1>API</h1>
+
+<h2>Show Games API - JSON</h2>
+<form action="/getGamesApi/json" >
+  <input class="btn btn-success" type="submit" value="Get Games API" />
+</form>
+
+<h2>Show Games API - XML</h2>
+<form action="/getGamesApi/xml" >
+  <input class="btn btn-success" type="submit" value="Get Games API" />
+</form>
+
+<h2>Show Games API By Price - JSON</h2>
+<form action="/getGamesPriceApi/json" action='get'>
+  <label for="maxPrice">Max Price</label>
+  <input type="text" id="maxPrice" name="maxPrice" required />
+  <label for="minPrice">Min Price</label>
+  <input type="text" id="minPrice" name="minPrice" required />
+  <input class="btn btn-success" type="submit" value="Get Games Price API" />
+</form>
+
+<h2>Show Games API By Price - XML</h2>
+<form action="/getGamesPriceApi/xml" action='get'>
+  <label for="maxPrice">Max Price</label>
+  <input type="text" id="maxPrice" name="maxPrice" required />
+  <label for="minPrice">Min Price</label>
+  <input type="text" id="minPrice" name="minPrice" required />
+  <input class="btn btn-success" type="submit" value="Get Games Price API" />
+</form>
+
+<h2>Show Games API By Name - JSON</h2>
+<form action="/getGamesNameApi/json" action='get'>
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required />
+  <input class="btn btn-success" type="submit" value="Get Games Name API" />
+</form>
+
+<h2>Show Games API By Name - XML</h2>
+<form action="/getGamesNameApi/xml" action='get'>
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required />
+  <input class="btn btn-success" type="submit" value="Get Games Name API" />
+</form>
+
+<h2>Show Games API By Description - JSON</h2>
+<form action="/getGamesDescriptionApi/json" action='get'>
+  <label for="description">Description</label>
+  <input type="text" id="description" name="description" required />
+  <input class="btn btn-success" type="submit" value="Get Games Description API" />
+</form>
+
+<h2>Show Games API By Description - XML</h2>
+<form action="/getGamesDescriptionApi/xml" action='get'>
+  <label for="description">Description</label>
+  <input type="text" id="description" name="description" required />
+  <input class="btn btn-success" type="submit" value="Get Games Description API" />
+</form>
+</div>

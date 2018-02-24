@@ -7,7 +7,8 @@ module.exports = function saveGame(req, res, next) {
          name: req.body.gameName,
          description: req.body.gameDescription,
          price: req.body.gamePrice,
-         quantity: req.body.gameQuantity
+         quantityLeft: req.body.gameQuantityLeft,
+         totalQuantity: req.body.gameTotalQuantity
      });
 
      game.save( (err) => {

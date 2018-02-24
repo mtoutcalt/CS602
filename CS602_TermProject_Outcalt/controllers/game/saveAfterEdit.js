@@ -12,10 +12,12 @@ module.exports = function saveGame(req, res, next) {
       return res.render('404');
     }
 
-    game.name = req.body.gameName; //get data from body of post
+    game.name = req.body.gameName;
     game.description = req.body.gameDescription;
     game.price = req.body.gamePrice;
-    game.quantity = req.body.gameQuantity;
+    game.quantityLeft = req.body.gameQuantityLeft;
+    game.totalQuantity = req.body.gameTotalQuantity;
+
 
 
     game.save( (err) => {

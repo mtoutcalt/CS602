@@ -12,12 +12,10 @@ module.exports = function saveCustomer(req, res, next) {
       return res.render('404');
     }
 
-    customer.firstName = req.body.firstName; //get data from body of post
+    customer.firstName = req.body.firstName;
     customer.lastName = req.body.lastName;
     customer.accountName = req.body.accountName;
     customer.address = req.body.address;
-    customer.orders = req.body.orders;
-
 
     customer.save( (err) => {
       if (err) {

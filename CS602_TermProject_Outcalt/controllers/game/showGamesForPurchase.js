@@ -3,6 +3,7 @@ const Game = DB.getGameModel();
 
 module.exports = function showGamesForPurchase(req, res, next) {
 
+
   if (req.query.gameName != null) {
     console.log("Looking for game!: " + req.query.gameName);
     let gameSearchByName = req.query.gameName;
@@ -18,7 +19,8 @@ module.exports = function showGamesForPurchase(req, res, next) {
           name: game.name,
           description: game.description,
           price: game.price,
-          quantity: game.quantity
+          quantityLeft: game.quantityLeft,
+          totalQuantity: game.totalQuantity
         }
       });
         res.render('showGamesForPurchaseView', {title: "Buy New and Used Video Games", data: results})
@@ -47,21 +49,41 @@ module.exports = function showGamesForPurchase(req, res, next) {
 
   } else {
 
-    Game.find({}, (err, games) => {
-      if (err) {
-        console.log("Error: %s ", err);
-      }
+      if (req.query.sorting != null) {
+        Game.find({}, null, {sort: {name: 1}}, (err, games) => {
+          if (err) {
+            console.log("Error: %s ", err);
+          }
 
-      let results = games.map( (game) => {
-        return {
-          id: game._id,
-          name: game.name,
-          description: game.description,
-          price: game.price,
-          quantity: game.quantity
-        }
-      });
-        res.render('showGamesForPurchaseView', {title: "Buy New and Used Video Games", data: results})
-    });
+          let results = games.map( (game) => {
+            return {
+              id: game._id,
+              name: game.name,
+              description: game.description,
+              price: game.price,
+              quantity: game.quantity
+            }
+          });
+            res.render('showGamesForPurchaseView', {title: "Buy New and Used Video Games", data: results})
+        });
+      } else {
+
+        Game.find({}, (err, games) => {
+          if (err) {
+            console.log("Error: %s ", err);
+          }
+
+          let results = games.map( (game) => {
+            return {
+              id: game._id,
+              name: game.name,
+              description: game.description,
+              price: game.price,
+              quantity: game.quantity
+            }
+          });
+            res.render('showGamesForPurchaseView', {title: "Buy New and Used Video Games", data: results})
+        });
+      }
   };
 };

@@ -3,10 +3,11 @@
     <table class="table table-condensed">
     <thead>
       <tr>
-        <th>Order ID</th>
-        <th>Order Date Created</th>
-        <th>Order Number</th>
-        <th>Order Game Purchased</th>
+        <th>Order - ID</th>
+        <th>Order - Date Created</th>
+        <th>Order - Number</th>
+        <th>Order - Game Purchased</th>
+        <th>Order - Game Quantity</th>
       </tr>
     </thead>
     <tbody>
@@ -22,7 +23,13 @@
               {{/each}}
             </ul>
           </td>
-
+          <td>
+            <ul>
+              {{#each this.gameQuantity}}
+                <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </td>
           <td>
             <a href="/orders/edit/{{this.id}}">Edit</a>
             <a href="/orders/delete/{{this.id}}">Delete</a>
