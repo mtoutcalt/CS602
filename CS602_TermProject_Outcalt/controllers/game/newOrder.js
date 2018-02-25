@@ -40,7 +40,7 @@ module.exports = async function newOrder(req, res, next) {
       await updatedGame.save();
     };
 
-    let shopper = await Customer.findById('5a91de19e830923ccccb3626');
+    let shopper = await Customer.findById('5a91fa1215fed13d946567ee');
     let order = new Order({
     	created: new Date(),
       gameId: gameIdArray,

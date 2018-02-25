@@ -34,7 +34,7 @@
         <tr>
           {{#each data.gameQuantity}}
               <td><input type="text" name="newGameQuantity" value="{{this}}"></td>
-              <input type="hidden" name="oldGameQuantity" value="{{this}}">
+              <input type="hidden" name="previousOrderedQuantity" value="{{this}}">
           {{/each}}
         </tr>
     </tbody>

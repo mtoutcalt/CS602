@@ -1,31 +1,10 @@
 admin
-  - update customer and game models when order is updated -- saveOrderAfterEdit
 
 customer
   - fix so current customer is used and can see their history instead of hardcoded link
 
 bug -
-  -update quantity when editing order
   -move api endpoints to their own files?
 
   -if game is deleted then order removes mention of game
-
-======
-Done
-======
-
-admin interface
-  -add/update/delete games
-  -show list of all customers
-  -select customer to show orders
-  -delete existing orders
-
-customer
-  - homepage - list of games selling - and let customer order game with quantity - decrement quantity and check for 0 and disallow if 0
-  - search by game name and game description
-
-
-xml and json rest apis for:
-   -list of products
-   -products matching the specified name
-   -products within price range
+  -order is deleted should return gameInventory back

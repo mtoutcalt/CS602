@@ -174,7 +174,30 @@ app.get('/getGamesDescriptionApi/xml', function(req, res) {
     });
 });
 //////////////
+// Experimenting with external video game API - from www.giantbomb.com
+app.get('/getData_Destiny', function(req, res) {
+    let optionsGameByDescription = {
+      url: urlString = 'https://www.giantbomb.com/api/game/3030-36067/',
+      qs:
+       { api_key: '',
+         format: 'json',
+         field_list: 'genres,name,deck,description,platforms,reviews,themes,similar_games' },
+      headers:
+       { 'User-Agent': 'user_judoboy',
+         'Cache-Control': 'no-cache',
+         'Accept': 'application/json' }
+    };
 
+    request.get(optionsGameByDescription, (error, response, body) => {
+      if (!error && response.statusCode == 200) {
+        res.json(JSON.parse(body));
+      } else {
+        console.log("Call failed");
+      }
+    });
+});
+
+//////////////
 app.use( (req, res) => {
   res.status(404);
   res.render('404');
@@ -228,6 +251,24 @@ function loadModelData() {
   game2.save();
 
   let game3 = new Game({
+    name: 'Destiny',
+    description: 'A sci-fi shooter',
+    price: 55,
+    quantityLeft: 15,
+    totalQuantity: 15
+  });
+  game3.save();
+
+  let game4 = new Game({
+    name: 'Tetris',
+    description: 'A popular puzzle game involving the manipulation of blocks',
+    price: 20,
+    quantityLeft: 15,
+    totalQuantity: 15
+  });
+  game4.save();
+
+  let game5 = new Game({
   	name: 'Super Mario Odyssey',
     description: 'A 3D platforming game featuring Mario on the Nintendo Switch',
   	price: 60,
@@ -235,18 +276,18 @@ function loadModelData() {
     totalQuantity: 20
   });
 
-  game3.save( (err) => {
+  game5.save( (err) => {
     if (err) throw err;
     let order1 = new Order({
     	created: new Date(),
-      gameId: [game1._id, game2._id],
+      gameId: [game1._id, game5._id],
       gameQuantity: [2, 1],
       customerId: customer1._id
     });
 
     let order2 = new Order({
     	created: new Date(),
-      gameId: [game2._id, game3._id],
+      gameId: [game5._id, game3._id],
       gameQuantity: [3, 1],
       customerId: customer1._id
     });
