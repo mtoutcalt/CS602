@@ -5,10 +5,10 @@ const autoIncrement = require('mongoose-auto-increment');
 
 const Game = gameDB.getGameModel();
 
-// const dbUrl = 'mongodb://' + credentials.username +
-// 	':' + credentials.password + '@' + credentials.host + ':' + credentials.port + '/' + credentials.database;
+const dbUrl = 'mongodb://' + credentials.username +
+	':' + credentials.password + '@' + credentials.host + ':' + credentials.port + '/' + credentials.database;
 
-const dbUrl = 'mongodb://' + '@' + credentials.host + ':' + credentials.port + '/' + credentials.database;
+// const dbUrl = 'mongodb://' + '@' + credentials.host + ':' + credentials.port + '/' + credentials.database;
 
 let connection = null;
 let model = null;
@@ -22,10 +22,6 @@ let orderSchema = new Schema({
 	gameQuantity: [String]
 });
 
-
-// orderSchema.methods.getGames = function() {
-// 		return Order.find({ gameId: this.gameId});
-// };
 
 module.exports = {
   getOrderModel: function getOrderModel() {

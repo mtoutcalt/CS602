@@ -1,0 +1,161 @@
+{
+    "error": "OK",
+    "limit": 1,
+    "offset": 0,
+    "number_of_page_results": 1,
+    "number_of_total_results": 1,
+    "status_code": 1,
+    "results": {
+        "deck": "SSX Tricky is the second game in the SSX franchise and was released under the now-defunct EA Sports Big label. Tricky is the first game in the series to feature Uber Tricks. ",
+        "name": "SSX Tricky",
+        "platforms": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-4/",
+                "id": 4,
+                "name": "Game Boy Advance",
+                "site_detail_url": "https://www.giantbomb.com/game-boy-advance/3045-4/",
+                "abbreviation": "GBA"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-19/",
+                "id": 19,
+                "name": "PlayStation 2",
+                "site_detail_url": "https://www.giantbomb.com/playstation-2/3045-19/",
+                "abbreviation": "PS2"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-23/",
+                "id": 23,
+                "name": "GameCube",
+                "site_detail_url": "https://www.giantbomb.com/gamecube/3045-23/",
+                "abbreviation": "GCN"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-32/",
+                "id": 32,
+                "name": "Xbox",
+                "site_detail_url": "https://www.giantbomb.com/xbox/3045-32/",
+                "abbreviation": "XBOX"
+            }
+        ],
+        "genres": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/genre/3060-3/",
+                "id": 3,
+                "name": "Sports",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=sports&wikiTypeId=3060&wikiId=3&genre=3"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/genre/3060-33/",
+                "id": 33,
+                "name": "Snowboarding/Skiing",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=snowboardingskiing&wikiTypeId=3060&wikiId=33&genre=33"
+            }
+        ],
+        "similar_games": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-20954/",
+                "id": 20954,
+                "name": "Shaun White Snowboarding",
+                "site_detail_url": "https://www.giantbomb.com/shaun-white-snowboarding/3030-20954/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-18946/",
+                "id": 18946,
+                "name": "1080° Snowboarding",
+                "site_detail_url": "https://www.giantbomb.com/1080-snowboarding/3030-18946/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-16647/",
+                "id": 16647,
+                "name": "Amped 3",
+                "site_detail_url": "https://www.giantbomb.com/amped-3/3030-16647/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-18426/",
+                "id": 18426,
+                "name": "Snowboard Kids 2",
+                "site_detail_url": "https://www.giantbomb.com/snowboard-kids-2/3030-18426/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-18062/",
+                "id": 18062,
+                "name": "Snowboard Kids",
+                "site_detail_url": "https://www.giantbomb.com/snowboard-kids/3030-18062/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-19339/",
+                "id": 19339,
+                "name": "1080° Avalanche",
+                "site_detail_url": "https://www.giantbomb.com/1080-avalanche/3030-19339/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-5022/",
+                "id": 5022,
+                "name": "Freekstyle",
+                "site_detail_url": "https://www.giantbomb.com/freekstyle/3030-5022/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-15277/",
+                "id": 15277,
+                "name": "TransWorld Snowboarding",
+                "site_detail_url": "https://www.giantbomb.com/transworld-snowboarding/3030-15277/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-20957/",
+                "id": 20957,
+                "name": "Pure",
+                "site_detail_url": "https://www.giantbomb.com/pure/3030-20957/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-14367/",
+                "id": 14367,
+                "name": "Sled Storm",
+                "site_detail_url": "https://www.giantbomb.com/sled-storm/3030-14367/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-9279/",
+                "id": 9279,
+                "name": "Kelly Slater's Pro Surfer",
+                "site_detail_url": "https://www.giantbomb.com/kelly-slaters-pro-surfer/3030-9279/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-23479/",
+                "id": 23479,
+                "name": "Stoked",
+                "site_detail_url": "https://www.giantbomb.com/stoked/3030-23479/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-25097/",
+                "id": 25097,
+                "name": "Shaun Palmer's Pro Snowboarder",
+                "site_detail_url": "https://www.giantbomb.com/shaun-palmers-pro-snowboarder/3030-25097/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-5510/",
+                "id": 5510,
+                "name": "X-Games: Pro Boarder",
+                "site_detail_url": "https://www.giantbomb.com/x-games-pro-boarder/3030-5510/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-28475/",
+                "id": 28475,
+                "name": "Stoked: Big Air Edition",
+                "site_detail_url": "https://www.giantbomb.com/stoked-big-air-edition/3030-28475/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-9806/",
+                "id": 9806,
+                "name": "EyeToy: AntiGrav",
+                "site_detail_url": "https://www.giantbomb.com/eyetoy-antigrav/3030-9806/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-20880/",
+                "id": 20880,
+                "name": "We Ski",
+                "site_detail_url": "https://www.giantbomb.com/we-ski/3030-20880/"
+            }
+        ]
+    },
+    "version": "1.0"
+}

@@ -18,8 +18,6 @@ module.exports = function saveGame(req, res, next) {
     game.quantityLeft = req.body.gameQuantityLeft;
     game.totalQuantity = req.body.gameTotalQuantity;
 
-
-
     game.save( (err) => {
       if (err) {
         console.log("Error updating : %s ", err);

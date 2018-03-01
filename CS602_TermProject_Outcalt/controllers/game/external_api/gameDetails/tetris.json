@@ -1,0 +1,906 @@
+{
+    "error": "OK",
+    "limit": 1,
+    "offset": 0,
+    "number_of_page_results": 1,
+    "number_of_total_results": 1,
+    "status_code": 1,
+    "results": {
+        "deck": "This shape-based Russian mind-bender set the stage for innumerable puzzle games to follow.",
+        "name": "Tetris",
+        "platforms": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-1/",
+                "id": 1,
+                "name": "Amiga",
+                "site_detail_url": "https://www.giantbomb.com/amiga/3045-1/",
+                "abbreviation": "AMI"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-3/",
+                "id": 3,
+                "name": "Game Boy",
+                "site_detail_url": "https://www.giantbomb.com/game-boy/3045-3/",
+                "abbreviation": "GB"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-6/",
+                "id": 6,
+                "name": "Genesis",
+                "site_detail_url": "https://www.giantbomb.com/genesis/3045-6/",
+                "abbreviation": "GEN"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-9/",
+                "id": 9,
+                "name": "Super Nintendo Entertainment System",
+                "site_detail_url": "https://www.giantbomb.com/super-nintendo-entertainment-system/3045-9/",
+                "abbreviation": "SNES"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-11/",
+                "id": 11,
+                "name": "Amstrad CPC",
+                "site_detail_url": "https://www.giantbomb.com/amstrad-cpc/3045-11/",
+                "abbreviation": "CPC"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-12/",
+                "id": 12,
+                "name": "Apple II",
+                "site_detail_url": "https://www.giantbomb.com/apple-ii/3045-12/",
+                "abbreviation": "APL2"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-13/",
+                "id": 13,
+                "name": "Atari ST",
+                "site_detail_url": "https://www.giantbomb.com/atari-st/3045-13/",
+                "abbreviation": "AST"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-14/",
+                "id": 14,
+                "name": "Commodore 64",
+                "site_detail_url": "https://www.giantbomb.com/commodore-64/3045-14/",
+                "abbreviation": "C64"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-15/",
+                "id": 15,
+                "name": "MSX",
+                "site_detail_url": "https://www.giantbomb.com/msx/3045-15/",
+                "abbreviation": "MSX"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-16/",
+                "id": 16,
+                "name": "ZX Spectrum",
+                "site_detail_url": "https://www.giantbomb.com/zx-spectrum/3045-16/",
+                "abbreviation": "SPEC"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-17/",
+                "id": 17,
+                "name": "Mac",
+                "site_detail_url": "https://www.giantbomb.com/mac/3045-17/",
+                "abbreviation": "MAC"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-18/",
+                "id": 18,
+                "name": "PlayStation Portable",
+                "site_detail_url": "https://www.giantbomb.com/playstation-portable/3045-18/",
+                "abbreviation": "PSP"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-21/",
+                "id": 21,
+                "name": "Nintendo Entertainment System",
+                "site_detail_url": "https://www.giantbomb.com/nintendo-entertainment-system/3045-21/",
+                "abbreviation": "NES"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-34/",
+                "id": 34,
+                "name": "N-Gage",
+                "site_detail_url": "https://www.giantbomb.com/n-gage/3045-34/",
+                "abbreviation": "NGE"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-54/",
+                "id": 54,
+                "name": "WonderSwan Color",
+                "site_detail_url": "https://www.giantbomb.com/wonderswan-color/3045-54/",
+                "abbreviation": "WSC"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-58/",
+                "id": 58,
+                "name": "Commodore 128",
+                "site_detail_url": "https://www.giantbomb.com/commodore-128/3045-58/",
+                "abbreviation": "C128"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-68/",
+                "id": 68,
+                "name": "TRS-80 CoCo",
+                "site_detail_url": "https://www.giantbomb.com/trs-80-coco/3045-68/",
+                "abbreviation": "COCO"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-84/",
+                "id": 84,
+                "name": "Arcade",
+                "site_detail_url": "https://www.giantbomb.com/arcade/3045-84/",
+                "abbreviation": "ARC"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-88/",
+                "id": 88,
+                "name": "PlayStation Network (PS3)",
+                "site_detail_url": "https://www.giantbomb.com/playstation-network-ps3/3045-88/",
+                "abbreviation": "PS3N"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                "id": 94,
+                "name": "PC",
+                "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                "abbreviation": "PC"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-95/",
+                "id": 95,
+                "name": "Sharp X68000",
+                "site_detail_url": "https://www.giantbomb.com/sharp-x68000/3045-95/",
+                "abbreviation": "X68K"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-96/",
+                "id": 96,
+                "name": "iPhone",
+                "site_detail_url": "https://www.giantbomb.com/iphone/3045-96/",
+                "abbreviation": "IPHN"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-109/",
+                "id": 109,
+                "name": "NEC PC-8801",
+                "site_detail_url": "https://www.giantbomb.com/nec-pc-8801/3045-109/",
+                "abbreviation": "PC88"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-110/",
+                "id": 110,
+                "name": "BBC Micro",
+                "site_detail_url": "https://www.giantbomb.com/bbc-micro/3045-110/",
+                "abbreviation": "BBCM"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-112/",
+                "id": 112,
+                "name": "NEC PC-9801",
+                "site_detail_url": "https://www.giantbomb.com/nec-pc-9801/3045-112/",
+                "abbreviation": "PC98"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-113/",
+                "id": 113,
+                "name": "Sharp X1",
+                "site_detail_url": "https://www.giantbomb.com/sharp-x1/3045-113/",
+                "abbreviation": "X1"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-114/",
+                "id": 114,
+                "name": "FM-7",
+                "site_detail_url": "https://www.giantbomb.com/fm-7/3045-114/",
+                "abbreviation": "FM7"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-116/",
+                "id": 116,
+                "name": "PlayStation Network (PSP)",
+                "site_detail_url": "https://www.giantbomb.com/playstation-network-psp/3045-116/",
+                "abbreviation": "PSPN"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-121/",
+                "id": 121,
+                "name": "iPad",
+                "site_detail_url": "https://www.giantbomb.com/ipad/3045-121/",
+                "abbreviation": "IPAD"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-123/",
+                "id": 123,
+                "name": "Android",
+                "site_detail_url": "https://www.giantbomb.com/android/3045-123/",
+                "abbreviation": "ANDR"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-124/",
+                "id": 124,
+                "name": "Windows Phone",
+                "site_detail_url": "https://www.giantbomb.com/windows-phone/3045-124/",
+                "abbreviation": "WP"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-138/",
+                "id": 138,
+                "name": "Nintendo 3DS eShop",
+                "site_detail_url": "https://www.giantbomb.com/nintendo-3ds-eshop/3045-138/",
+                "abbreviation": "3DSE"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-140/",
+                "id": 140,
+                "name": "Browser",
+                "site_detail_url": "https://www.giantbomb.com/browser/3045-140/",
+                "abbreviation": "BROW"
+            }
+        ],
+        "genres": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/genre/3060-18/",
+                "id": 18,
+                "name": "Puzzle",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=puzzle&wikiTypeId=3060&wikiId=18&genre=18"
+            }
+        ],
+        "similar_games": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-1072/",
+                "id": 1072,
+                "name": "Dr. Mario 64",
+                "site_detail_url": "https://www.giantbomb.com/dr-mario-64/3030-1072/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-20681/",
+                "id": 20681,
+                "name": "Poker Smash",
+                "site_detail_url": "https://www.giantbomb.com/poker-smash/3030-20681/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-1916/",
+                "id": 1916,
+                "name": "Puyo Puyo",
+                "site_detail_url": "https://www.giantbomb.com/puyo-puyo/3030-1916/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-14264/",
+                "id": 14264,
+                "name": "Wetrix",
+                "site_detail_url": "https://www.giantbomb.com/wetrix/3030-14264/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-5057/",
+                "id": 5057,
+                "name": "Lumines: Puzzle Fusion",
+                "site_detail_url": "https://www.giantbomb.com/lumines-puzzle-fusion/3030-5057/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-2582/",
+                "id": 2582,
+                "name": "Wario's Woods",
+                "site_detail_url": "https://www.giantbomb.com/warios-woods/3030-2582/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-14873/",
+                "id": 14873,
+                "name": "Kirby's Avalanche",
+                "site_detail_url": "https://www.giantbomb.com/kirbys-avalanche/3030-14873/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-21935/",
+                "id": 21935,
+                "name": "WildSnake",
+                "site_detail_url": "https://www.giantbomb.com/wildsnake/3030-21935/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-17641/",
+                "id": 17641,
+                "name": "Dr. Mario",
+                "site_detail_url": "https://www.giantbomb.com/dr-mario/3030-17641/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-21680/",
+                "id": 21680,
+                "name": "Trism",
+                "site_detail_url": "https://www.giantbomb.com/trism/3030-21680/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-5845/",
+                "id": 5845,
+                "name": "Super Puzzle Fighter II Turbo HD Remix",
+                "site_detail_url": "https://www.giantbomb.com/super-puzzle-fighter-ii-turbo-hd-remix/3030-5845/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-21701/",
+                "id": 21701,
+                "name": "Egg Mania: Eggstreme Madness",
+                "site_detail_url": "https://www.giantbomb.com/egg-mania-eggstreme-madness/3030-21701/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-14116/",
+                "id": 14116,
+                "name": "Tetris Worlds",
+                "site_detail_url": "https://www.giantbomb.com/tetris-worlds/3030-14116/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-17985/",
+                "id": 17985,
+                "name": "Hatris",
+                "site_detail_url": "https://www.giantbomb.com/hatris/3030-17985/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-11890/",
+                "id": 11890,
+                "name": "T-Tris",
+                "site_detail_url": "https://www.giantbomb.com/t-tris/3030-11890/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-12987/",
+                "id": 12987,
+                "name": "Mermaids of Atlantis: The Riddle of The Magic Bubble",
+                "site_detail_url": "https://www.giantbomb.com/mermaids-of-atlantis-the-riddle-of-the-magic-bubbl/3030-12987/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-21354/",
+                "id": 21354,
+                "name": "Tetris Elements",
+                "site_detail_url": "https://www.giantbomb.com/tetris-elements/3030-21354/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-5182/",
+                "id": 5182,
+                "name": "Geom Cube",
+                "site_detail_url": "https://www.giantbomb.com/geom-cube/3030-5182/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-16966/",
+                "id": 16966,
+                "name": "Yoshi's Cookie",
+                "site_detail_url": "https://www.giantbomb.com/yoshis-cookie/3030-16966/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-16455/",
+                "id": 16455,
+                "name": "Klax",
+                "site_detail_url": "https://www.giantbomb.com/klax/3030-16455/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-13943/",
+                "id": 13943,
+                "name": "Pac-Attack",
+                "site_detail_url": "https://www.giantbomb.com/pac-attack/3030-13943/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-10515/",
+                "id": 10515,
+                "name": "Magical Tetris Challenge",
+                "site_detail_url": "https://www.giantbomb.com/magical-tetris-challenge/3030-10515/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-2755/",
+                "id": 2755,
+                "name": "Super Puzzle Fighter II Turbo",
+                "site_detail_url": "https://www.giantbomb.com/super-puzzle-fighter-ii-turbo/3030-2755/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-23076/",
+                "id": 23076,
+                "name": "Sonic Eraser",
+                "site_detail_url": "https://www.giantbomb.com/sonic-eraser/3030-23076/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-9736/",
+                "id": 9736,
+                "name": "TetriNET",
+                "site_detail_url": "https://www.giantbomb.com/tetrinet/3030-9736/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-23337/",
+                "id": 23337,
+                "name": "Tris",
+                "site_detail_url": "https://www.giantbomb.com/tris/3030-23337/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-1601/",
+                "id": 1601,
+                "name": "Lumines II",
+                "site_detail_url": "https://www.giantbomb.com/lumines-ii/3030-1601/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-23597/",
+                "id": 23597,
+                "name": "Dizzy Panic!",
+                "site_detail_url": "https://www.giantbomb.com/dizzy-panic/3030-23597/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-15464/",
+                "id": 15464,
+                "name": "Polarium Advance",
+                "site_detail_url": "https://www.giantbomb.com/polarium-advance/3030-15464/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-23694/",
+                "id": 23694,
+                "name": "Lumines Supernova",
+                "site_detail_url": "https://www.giantbomb.com/lumines-supernova/3030-23694/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-20609/",
+                "id": 20609,
+                "name": "Piyotama",
+                "site_detail_url": "https://www.giantbomb.com/piyotama/3030-20609/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-7647/",
+                "id": 7647,
+                "name": "Acid Drop",
+                "site_detail_url": "https://www.giantbomb.com/acid-drop/3030-7647/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-18228/",
+                "id": 18228,
+                "name": "Tail Tale",
+                "site_detail_url": "https://www.giantbomb.com/tail-tale/3030-18228/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-10430/",
+                "id": 10430,
+                "name": "Magic Boxes",
+                "site_detail_url": "https://www.giantbomb.com/magic-boxes/3030-10430/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-5604/",
+                "id": 5604,
+                "name": "Die Türme von Hanoi",
+                "site_detail_url": "https://www.giantbomb.com/die-turme-von-hanoi/3030-5604/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-24052/",
+                "id": 24052,
+                "name": "Trash Panic",
+                "site_detail_url": "https://www.giantbomb.com/trash-panic/3030-24052/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-12246/",
+                "id": 12246,
+                "name": "Pusher",
+                "site_detail_url": "https://www.giantbomb.com/pusher/3030-12246/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-24872/",
+                "id": 24872,
+                "name": "Topple",
+                "site_detail_url": "https://www.giantbomb.com/topple/3030-24872/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-5770/",
+                "id": 5770,
+                "name": "Kentris",
+                "site_detail_url": "https://www.giantbomb.com/kentris/3030-5770/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-3012/",
+                "id": 3012,
+                "name": "Pyramid",
+                "site_detail_url": "https://www.giantbomb.com/pyramid/3030-3012/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-14883/",
+                "id": 14883,
+                "name": "Fourfit",
+                "site_detail_url": "https://www.giantbomb.com/fourfit/3030-14883/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-25561/",
+                "id": 25561,
+                "name": "Topple 2",
+                "site_detail_url": "https://www.giantbomb.com/topple-2/3030-25561/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-10628/",
+                "id": 10628,
+                "name": "Kirby's Star Stacker",
+                "site_detail_url": "https://www.giantbomb.com/kirbys-star-stacker/3030-10628/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-14989/",
+                "id": 14989,
+                "name": "Amazing Tater",
+                "site_detail_url": "https://www.giantbomb.com/amazing-tater/3030-14989/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-19197/",
+                "id": 19197,
+                "name": "Yoshi",
+                "site_detail_url": "https://www.giantbomb.com/yoshi/3030-19197/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-26045/",
+                "id": 26045,
+                "name": "Witch's Workshop",
+                "site_detail_url": "https://www.giantbomb.com/witchs-workshop/3030-26045/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-26140/",
+                "id": 26140,
+                "name": "Altar of Gems",
+                "site_detail_url": "https://www.giantbomb.com/altar-of-gems/3030-26140/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-18287/",
+                "id": 18287,
+                "name": "Hexic",
+                "site_detail_url": "https://www.giantbomb.com/hexic/3030-18287/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-4938/",
+                "id": 4938,
+                "name": "Zoop",
+                "site_detail_url": "https://www.giantbomb.com/zoop/3030-4938/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-11179/",
+                "id": 11179,
+                "name": "Tetroid 2012",
+                "site_detail_url": "https://www.giantbomb.com/tetroid-2012/3030-11179/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-28182/",
+                "id": 28182,
+                "name": "Kubes",
+                "site_detail_url": "https://www.giantbomb.com/kubes/3030-28182/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-22805/",
+                "id": 22805,
+                "name": "Lights Out",
+                "site_detail_url": "https://www.giantbomb.com/lights-out/3030-22805/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-29086/",
+                "id": 29086,
+                "name": "Unify",
+                "site_detail_url": "https://www.giantbomb.com/unify/3030-29086/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-29384/",
+                "id": 29384,
+                "name": "City Rain",
+                "site_detail_url": "https://www.giantbomb.com/city-rain/3030-29384/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-26412/",
+                "id": 26412,
+                "name": "Critter Crunch",
+                "site_detail_url": "https://www.giantbomb.com/critter-crunch/3030-26412/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-11442/",
+                "id": 11442,
+                "name": "Dr. Robotnik's Mean Bean Machine",
+                "site_detail_url": "https://www.giantbomb.com/dr-robotniks-mean-bean-machine/3030-11442/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-9436/",
+                "id": 9436,
+                "name": "Audiosurf",
+                "site_detail_url": "https://www.giantbomb.com/audiosurf/3030-9436/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-30899/",
+                "id": 30899,
+                "name": "Aqua Rush",
+                "site_detail_url": "https://www.giantbomb.com/aqua-rush/3030-30899/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-31017/",
+                "id": 31017,
+                "name": "Trioncube",
+                "site_detail_url": "https://www.giantbomb.com/trioncube/3030-31017/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-7562/",
+                "id": 7562,
+                "name": "Alexey's Dwice",
+                "site_detail_url": "https://www.giantbomb.com/alexeys-dwice/3030-7562/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-25868/",
+                "id": 25868,
+                "name": "Roogoo Attack",
+                "site_detail_url": "https://www.giantbomb.com/roogoo-attack/3030-25868/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-1271/",
+                "id": 1271,
+                "name": "Columns Crown",
+                "site_detail_url": "https://www.giantbomb.com/columns-crown/3030-1271/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-29108/",
+                "id": 29108,
+                "name": "Columns II: The Voyage Through Time",
+                "site_detail_url": "https://www.giantbomb.com/columns-ii-the-voyage-through-time/3030-29108/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-31279/",
+                "id": 31279,
+                "name": "Metris II",
+                "site_detail_url": "https://www.giantbomb.com/metris-ii/3030-31279/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-31408/",
+                "id": 31408,
+                "name": "Metris",
+                "site_detail_url": "https://www.giantbomb.com/metris/3030-31408/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-31432/",
+                "id": 31432,
+                "name": "Metris 3",
+                "site_detail_url": "https://www.giantbomb.com/metris-3/3030-31432/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-31444/",
+                "id": 31444,
+                "name": "Metris 4",
+                "site_detail_url": "https://www.giantbomb.com/metris-4/3030-31444/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-31140/",
+                "id": 31140,
+                "name": "Tetris Party Deluxe",
+                "site_detail_url": "https://www.giantbomb.com/tetris-party-deluxe/3030-31140/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-31588/",
+                "id": 31588,
+                "name": "Metris 5",
+                "site_detail_url": "https://www.giantbomb.com/metris-5/3030-31588/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-31962/",
+                "id": 31962,
+                "name": "Cruxade",
+                "site_detail_url": "https://www.giantbomb.com/cruxade/3030-31962/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-22518/",
+                "id": 22518,
+                "name": "Block Out",
+                "site_detail_url": "https://www.giantbomb.com/block-out/3030-22518/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-25711/",
+                "id": 25711,
+                "name": "Magnetis",
+                "site_detail_url": "https://www.giantbomb.com/magnetis/3030-25711/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-30060/",
+                "id": 30060,
+                "name": "Art Of Balance",
+                "site_detail_url": "https://www.giantbomb.com/art-of-balance/3030-30060/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-33455/",
+                "id": 33455,
+                "name": "Blokus",
+                "site_detail_url": "https://www.giantbomb.com/blokus/3030-33455/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-30474/",
+                "id": 30474,
+                "name": "Slam Bolt Scrappers",
+                "site_detail_url": "https://www.giantbomb.com/slam-bolt-scrappers/3030-30474/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-9151/",
+                "id": 9151,
+                "name": "Edtris 2600",
+                "site_detail_url": "https://www.giantbomb.com/edtris-2600/3030-9151/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-15177/",
+                "id": 15177,
+                "name": "Fisher-Price: Perfect Fit",
+                "site_detail_url": "https://www.giantbomb.com/fisher-price-perfect-fit/3030-15177/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-34863/",
+                "id": 34863,
+                "name": "Trouble Zone",
+                "site_detail_url": "https://www.giantbomb.com/trouble-zone/3030-34863/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-14466/",
+                "id": 14466,
+                "name": "Triptych",
+                "site_detail_url": "https://www.giantbomb.com/triptych/3030-14466/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-4757/",
+                "id": 4757,
+                "name": "Egaint",
+                "site_detail_url": "https://www.giantbomb.com/egaint/3030-4757/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-6921/",
+                "id": 6921,
+                "name": "Disney's Timon & Pumbaa's Jungle Games",
+                "site_detail_url": "https://www.giantbomb.com/disneys-timon-pumbaas-jungle-games/3030-6921/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-35429/",
+                "id": 35429,
+                "name": "Blocks That Matter",
+                "site_detail_url": "https://www.giantbomb.com/blocks-that-matter/3030-35429/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-36592/",
+                "id": 36592,
+                "name": "Noite Animal",
+                "site_detail_url": "https://www.giantbomb.com/noite-animal/3030-36592/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-37076/",
+                "id": 37076,
+                "name": "Not Tetris 2",
+                "site_detail_url": "https://www.giantbomb.com/not-tetris-2/3030-37076/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-37282/",
+                "id": 37282,
+                "name": "Puzzlejuice",
+                "site_detail_url": "https://www.giantbomb.com/puzzlejuice/3030-37282/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-37052/",
+                "id": 37052,
+                "name": "SpellTower",
+                "site_detail_url": "https://www.giantbomb.com/spelltower/3030-37052/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-2578/",
+                "id": 2578,
+                "name": "Blocks from Hell",
+                "site_detail_url": "https://www.giantbomb.com/blocks-from-hell/3030-2578/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-33007/",
+                "id": 33007,
+                "name": "Cleopatra Fortune",
+                "site_detail_url": "https://www.giantbomb.com/cleopatra-fortune/3030-33007/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-38415/",
+                "id": 38415,
+                "name": "Slydris",
+                "site_detail_url": "https://www.giantbomb.com/slydris/3030-38415/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-32678/",
+                "id": 32678,
+                "name": "Hello Kitty's Cube Frenzy",
+                "site_detail_url": "https://www.giantbomb.com/hello-kittys-cube-frenzy/3030-32678/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-28366/",
+                "id": 28366,
+                "name": "Mystery Circle",
+                "site_detail_url": "https://www.giantbomb.com/mystery-circle/3030-28366/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-17432/",
+                "id": 17432,
+                "name": "Floatris",
+                "site_detail_url": "https://www.giantbomb.com/floatris/3030-17432/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-6117/",
+                "id": 6117,
+                "name": "Gorby's Pipeline",
+                "site_detail_url": "https://www.giantbomb.com/gorbys-pipeline/3030-6117/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-40890/",
+                "id": 40890,
+                "name": "Jelly Allstars",
+                "site_detail_url": "https://www.giantbomb.com/jelly-allstars/3030-40890/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-41009/",
+                "id": 41009,
+                "name": "Bloxeed",
+                "site_detail_url": "https://www.giantbomb.com/bloxeed/3030-41009/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-42073/",
+                "id": 42073,
+                "name": "Starseed Pilgrim",
+                "site_detail_url": "https://www.giantbomb.com/starseed-pilgrim/3030-42073/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-42958/",
+                "id": 42958,
+                "name": "Clocks",
+                "site_detail_url": "https://www.giantbomb.com/clocks/3030-42958/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-43452/",
+                "id": 43452,
+                "name": "Block Buster",
+                "site_detail_url": "https://www.giantbomb.com/block-buster/3030-43452/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-9144/",
+                "id": 9144,
+                "name": "Zyconix",
+                "site_detail_url": "https://www.giantbomb.com/zyconix/3030-9144/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-46921/",
+                "id": 46921,
+                "name": "Hex Tetris",
+                "site_detail_url": "https://www.giantbomb.com/hex-tetris/3030-46921/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-44328/",
+                "id": 44328,
+                "name": "Textris",
+                "site_detail_url": "https://www.giantbomb.com/textris/3030-44328/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-46305/",
+                "id": 46305,
+                "name": "Peria Chronicles",
+                "site_detail_url": "https://www.giantbomb.com/peria-chronicles/3030-46305/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-53836/",
+                "id": 53836,
+                "name": "Jumble Blocks",
+                "site_detail_url": "https://www.giantbomb.com/jumble-blocks/3030-53836/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-58082/",
+                "id": 58082,
+                "name": "Cube-Up",
+                "site_detail_url": "https://www.giantbomb.com/cube-up/3030-58082/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-58739/",
+                "id": 58739,
+                "name": "Akihabara - Feel the Rhythm",
+                "site_detail_url": "https://www.giantbomb.com/akihabara-feel-the-rhythm/3030-58739/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-61447/",
+                "id": 61447,
+                "name": "Tube-It",
+                "site_detail_url": "https://www.giantbomb.com/tube-it/3030-61447/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-50927/",
+                "id": 50927,
+                "name": "Falling Block",
+                "site_detail_url": "https://www.giantbomb.com/falling-block/3030-50927/"
+            }
+        ],
+        "themes": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/theme/3032-22/",
+                "id": 22,
+                "name": "Abstract",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=abstract&wikiTypeId=3032&wikiId=22&theme=22"
+            }
+        ]
+    },
+    "version": "1.0"
+}

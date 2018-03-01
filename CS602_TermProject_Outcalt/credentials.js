@@ -1,14 +1,14 @@
 //Using the class mlab mongo db
 
 module.exports = {
-	host:     'localhost',
-	port: 		'27017',
-	username: '',
-	password: '',
-	database: 'cs602db'
-	// host:     'ds115768.mlab.com',
-	// port: 		'15768',
-	// username: 'cs602_user',
-	// password: 'cs602_secret',
+	// host:     'localhost',
+	// port: 		'27017',
+	// username: '',
+	// password: '',
 	// database: 'cs602db'
+	host:     'ds151508.mlab.com',
+	port: 		'51508',
+	username: 'outcalt',
+	password: 'Password222387',
+	database: 'cs602db_outcalt'
 }

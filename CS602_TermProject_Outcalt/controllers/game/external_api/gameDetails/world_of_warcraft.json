@@ -1,0 +1,131 @@
+{
+    "error": "OK",
+    "limit": 1,
+    "offset": 0,
+    "number_of_page_results": 1,
+    "number_of_total_results": 1,
+    "status_code": 1,
+    "results": {
+        "deck": "World of Warcraft is an MMORPG that takes place in Blizzard Entertainment's Warcraft universe; at its peak, it boasted a player base of over 12.5 million subscribers, making it the most popular MMO of all time.",
+        "name": "World of Warcraft",
+        "platforms": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-17/",
+                "id": 17,
+                "name": "Mac",
+                "site_detail_url": "https://www.giantbomb.com/mac/3045-17/",
+                "abbreviation": "MAC"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                "id": 94,
+                "name": "PC",
+                "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                "abbreviation": "PC"
+            }
+        ],
+        "genres": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/genre/3060-16/",
+                "id": 16,
+                "name": "MMORPG",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=mmorpg&wikiTypeId=3060&wikiId=16&genre=16"
+            }
+        ],
+        "similar_games": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-6012/",
+                "id": 6012,
+                "name": "Progress Quest",
+                "site_detail_url": "https://www.giantbomb.com/progress-quest/3030-6012/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-38206/",
+                "id": 38206,
+                "name": "The Elder Scrolls Online",
+                "site_detail_url": "https://www.giantbomb.com/the-elder-scrolls-online/3030-38206/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-12376/",
+                "id": 12376,
+                "name": "The Lord of the Rings Online: Shadows of Angmar",
+                "site_detail_url": "https://www.giantbomb.com/the-lord-of-the-rings-online-shadows-of-angmar/3030-12376/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-18547/",
+                "id": 18547,
+                "name": "EverQuest II",
+                "site_detail_url": "https://www.giantbomb.com/everquest-ii/3030-18547/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-10796/",
+                "id": 10796,
+                "name": "EverQuest",
+                "site_detail_url": "https://www.giantbomb.com/everquest/3030-10796/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-44595/",
+                "id": 44595,
+                "name": "Eldevin",
+                "site_detail_url": "https://www.giantbomb.com/eldevin/3030-44595/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-45387/",
+                "id": 45387,
+                "name": "Westward Journey Online",
+                "site_detail_url": "https://www.giantbomb.com/westward-journey-online/3030-45387/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-7334/",
+                "id": 7334,
+                "name": "Crossfire",
+                "site_detail_url": "https://www.giantbomb.com/crossfire/3030-7334/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-5767/",
+                "id": 5767,
+                "name": "Ultima Online",
+                "site_detail_url": "https://www.giantbomb.com/ultima-online/3030-5767/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-44025/",
+                "id": 44025,
+                "name": "Black Desert Online",
+                "site_detail_url": "https://www.giantbomb.com/black-desert-online/3030-44025/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-29355/",
+                "id": 29355,
+                "name": "Tera",
+                "site_detail_url": "https://www.giantbomb.com/tera/3030-29355/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-25906/",
+                "id": 25906,
+                "name": "Tales of Eternia Online",
+                "site_detail_url": "https://www.giantbomb.com/tales-of-eternia-online/3030-25906/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-45239/",
+                "id": 45239,
+                "name": "Monster Hunter 4 Ultimate",
+                "site_detail_url": "https://www.giantbomb.com/monster-hunter-4-ultimate/3030-45239/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-46305/",
+                "id": 46305,
+                "name": "Peria Chronicles",
+                "site_detail_url": "https://www.giantbomb.com/peria-chronicles/3030-46305/"
+            }
+        ],
+        "themes": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/theme/3032-2/",
+                "id": 2,
+                "name": "Fantasy",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=fantasy&wikiTypeId=3032&wikiId=2&theme=2"
+            }
+        ]
+    },
+    "version": "1.0"
+}

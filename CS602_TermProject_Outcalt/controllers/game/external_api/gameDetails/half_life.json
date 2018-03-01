@@ -1,0 +1,121 @@
+{
+    "error": "OK",
+    "limit": 1,
+    "offset": 0,
+    "number_of_page_results": 1,
+    "number_of_total_results": 1,
+    "status_code": 1,
+    "results": {
+        "deck": "Take on the role of Gordon Freeman as he escapes the disastrous aftermath of an experiment gone wrong in the Black Mesa Research Facility.",
+        "name": "Half-Life",
+        "platforms": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-17/",
+                "id": 17,
+                "name": "Mac",
+                "site_detail_url": "https://www.giantbomb.com/mac/3045-17/",
+                "abbreviation": "MAC"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-19/",
+                "id": 19,
+                "name": "PlayStation 2",
+                "site_detail_url": "https://www.giantbomb.com/playstation-2/3045-19/",
+                "abbreviation": "PS2"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                "id": 94,
+                "name": "PC",
+                "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                "abbreviation": "PC"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-152/",
+                "id": 152,
+                "name": "Linux",
+                "site_detail_url": "https://www.giantbomb.com/linux/3045-152/",
+                "abbreviation": "LIN"
+            }
+        ],
+        "genres": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/genre/3060-32/",
+                "id": 32,
+                "name": "First-Person Shooter",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=first-person-shooter&wikiTypeId=3060&wikiId=32&genre=32"
+            }
+        ],
+        "similar_games": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-14537/",
+                "id": 14537,
+                "name": "Doom 3",
+                "site_detail_url": "https://www.giantbomb.com/doom-3/3030-14537/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-17646/",
+                "id": 17646,
+                "name": "Unreal",
+                "site_detail_url": "https://www.giantbomb.com/unreal/3030-17646/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-8858/",
+                "id": 8858,
+                "name": "Kingpin: Life of Crime",
+                "site_detail_url": "https://www.giantbomb.com/kingpin-life-of-crime/3030-8858/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-726/",
+                "id": 726,
+                "name": "Shogo: Mobile Armor Division",
+                "site_detail_url": "https://www.giantbomb.com/shogo-mobile-armor-division/3030-726/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-3207/",
+                "id": 3207,
+                "name": "Quake II",
+                "site_detail_url": "https://www.giantbomb.com/quake-ii/3030-3207/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-8015/",
+                "id": 8015,
+                "name": "Quake",
+                "site_detail_url": "https://www.giantbomb.com/quake/3030-8015/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-16233/",
+                "id": 16233,
+                "name": "SiN",
+                "site_detail_url": "https://www.giantbomb.com/sin/3030-16233/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-29021/",
+                "id": 29021,
+                "name": "Resistance 3",
+                "site_detail_url": "https://www.giantbomb.com/resistance-3/3030-29021/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-15466/",
+                "id": 15466,
+                "name": "Red Faction",
+                "site_detail_url": "https://www.giantbomb.com/red-faction/3030-15466/"
+            }
+        ],
+        "themes": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/theme/3032-1/",
+                "id": 1,
+                "name": "Horror",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=horror&wikiTypeId=3032&wikiId=1&theme=1"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/theme/3032-3/",
+                "id": 3,
+                "name": "Sci-Fi",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=sci-fi&wikiTypeId=3032&wikiId=3&theme=3"
+            }
+        ]
+    },
+    "version": "1.0"
+}

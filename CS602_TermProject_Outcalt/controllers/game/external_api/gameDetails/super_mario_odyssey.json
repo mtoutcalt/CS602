@@ -1,0 +1,60 @@
+{
+    "error": "OK",
+    "limit": 1,
+    "offset": 0,
+    "number_of_page_results": 1,
+    "number_of_total_results": 1,
+    "status_code": 1,
+    "results": {
+        "deck": "Nintendo's favorite plumber and his new hat-shaped companion travel far beyond the Mushroom Kingdom in this Switch-exclusive 3D platformer.",
+        "name": "Super Mario Odyssey",
+        "platforms": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                "id": 157,
+                "name": "Nintendo Switch",
+                "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                "abbreviation": "NSW"
+            }
+        ],
+        "genres": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/genre/3060-41/",
+                "id": 41,
+                "name": "Platformer",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=platformer&wikiTypeId=3060&wikiId=41&genre=41"
+            }
+        ],
+        "reviews": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/review/1900-774/",
+                "id": 774,
+                "name": "Super Mario Odyssey Review",
+                "site_detail_url": "https://www.giantbomb.com/reviews/super-mario-odyssey-review/1900-774/"
+            }
+        ],
+        "similar_games": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-14623/",
+                "id": 14623,
+                "name": "Jak and Daxter: The Precursor Legacy",
+                "site_detail_url": "https://www.giantbomb.com/jak-and-daxter-the-precursor-legacy/3030-14623/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-2931/",
+                "id": 2931,
+                "name": "Super Mario 64",
+                "site_detail_url": "https://www.giantbomb.com/super-mario-64/3030-2931/"
+            }
+        ],
+        "themes": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/theme/3032-2/",
+                "id": 2,
+                "name": "Fantasy",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=fantasy&wikiTypeId=3032&wikiId=2&theme=2"
+            }
+        ]
+    },
+    "version": "1.0"
+}

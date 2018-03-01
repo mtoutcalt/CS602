@@ -1,0 +1,83 @@
+{
+    "error": "OK",
+    "limit": 1,
+    "offset": 0,
+    "number_of_page_results": 1,
+    "number_of_total_results": 1,
+    "status_code": 1,
+    "results": {
+        "deck": "Pokémon Red version and Blue version were the initial two releases in the Pokémon franchise. Red, a Pokémon trainer from Pallet Town who Ash Ketchum, the anime protagonist, was later based on, starts a journey to become a Pokémon Master and ultimately catch 'em all.",
+        "name": "Pokémon Red/Blue",
+        "platforms": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-3/",
+                "id": 3,
+                "name": "Game Boy",
+                "site_detail_url": "https://www.giantbomb.com/game-boy/3045-3/",
+                "abbreviation": "GB"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-138/",
+                "id": 138,
+                "name": "Nintendo 3DS eShop",
+                "site_detail_url": "https://www.giantbomb.com/nintendo-3ds-eshop/3045-138/",
+                "abbreviation": "3DSE"
+            }
+        ],
+        "genres": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/genre/3060-5/",
+                "id": 5,
+                "name": "Role-Playing",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=role-playing&wikiTypeId=3060&wikiId=5&genre=5"
+            }
+        ],
+        "similar_games": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-47666/",
+                "id": 47666,
+                "name": "Collectems",
+                "site_detail_url": "https://www.giantbomb.com/collectems/3030-47666/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-38769/",
+                "id": 38769,
+                "name": "46 Okunen Monogatari: The Shinka Ron",
+                "site_detail_url": "https://www.giantbomb.com/46-okunen-monogatari-the-shinka-ron/3030-38769/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-15428/",
+                "id": 15428,
+                "name": "Sansara Naga 2",
+                "site_detail_url": "https://www.giantbomb.com/sansara-naga-2/3030-15428/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-46305/",
+                "id": 46305,
+                "name": "Peria Chronicles",
+                "site_detail_url": "https://www.giantbomb.com/peria-chronicles/3030-46305/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-46795/",
+                "id": 46795,
+                "name": "Tranquilizer Gun",
+                "site_detail_url": "https://www.giantbomb.com/tranquilizer-gun/3030-46795/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-52223/",
+                "id": 52223,
+                "name": "Pocket Mortys",
+                "site_detail_url": "https://www.giantbomb.com/pocket-mortys/3030-52223/"
+            }
+        ],
+        "themes": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/theme/3032-2/",
+                "id": 2,
+                "name": "Fantasy",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=fantasy&wikiTypeId=3032&wikiId=2&theme=2"
+            }
+        ]
+    },
+    "version": "1.0"
+}

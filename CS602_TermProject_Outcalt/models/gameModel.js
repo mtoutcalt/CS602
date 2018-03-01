@@ -1,10 +1,10 @@
 const credentials = require('../credentials');
 const mongoose = require('mongoose');
 
-// const dbUrl = 'mongodb://' + credentials.username +
-// 	':' + credentials.password + '@' + credentials.host + ':' + credentials.port + '/' + credentials.database;
+const dbUrl = 'mongodb://' + credentials.username +
+	':' + credentials.password + '@' + credentials.host + ':' + credentials.port + '/' + credentials.database;
 
-const dbUrl = 'mongodb://' + '@' + credentials.host + ':' + credentials.port + '/' + credentials.database;
+// const dbUrl = 'mongodb://' + '@' + credentials.host + ':' + credentials.port + '/' + credentials.database;
 
 let connection = null;
 let model = null;
@@ -17,10 +17,6 @@ let gameSchema = new Schema({
 	totalQuantity: Number,
   quantityLeft: Number
 });
-
-// gameSchema.methods.getGames = function() {
-// 		return Order.find({ gameId: this._id});
-// };
 
 module.exports = {
   getGameModel: function getGameModel() {

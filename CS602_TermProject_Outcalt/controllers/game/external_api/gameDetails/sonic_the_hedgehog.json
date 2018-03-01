@@ -1,0 +1,151 @@
+{
+    "error": "OK",
+    "limit": 1,
+    "offset": 0,
+    "number_of_page_results": 1,
+    "number_of_total_results": 1,
+    "status_code": 1,
+    "results": {
+        "deck": "The inaugural game in Sega's flagship series starring Sega's most iconic character the blue hedgehog known as Sonic. Sonic the Hedgehog infused conventional platforming with thrilling speed.",
+        "name": "Sonic the Hedgehog",
+        "platforms": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-4/",
+                "id": 4,
+                "name": "Game Boy Advance",
+                "site_detail_url": "https://www.giantbomb.com/game-boy-advance/3045-4/",
+                "abbreviation": "GBA"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-5/",
+                "id": 5,
+                "name": "Game Gear",
+                "site_detail_url": "https://www.giantbomb.com/game-gear/3045-5/",
+                "abbreviation": "GG"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-6/",
+                "id": 6,
+                "name": "Genesis",
+                "site_detail_url": "https://www.giantbomb.com/genesis/3045-6/",
+                "abbreviation": "GEN"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-8/",
+                "id": 8,
+                "name": "Sega Master System",
+                "site_detail_url": "https://www.giantbomb.com/sega-master-system/3045-8/",
+                "abbreviation": "SMS"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-86/",
+                "id": 86,
+                "name": "Xbox 360 Games Store",
+                "site_detail_url": "https://www.giantbomb.com/xbox-360-games-store/3045-86/",
+                "abbreviation": "XBGS"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-87/",
+                "id": 87,
+                "name": "Wii Shop",
+                "site_detail_url": "https://www.giantbomb.com/wii-shop/3045-87/",
+                "abbreviation": "WSHP"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-88/",
+                "id": 88,
+                "name": "PlayStation Network (PS3)",
+                "site_detail_url": "https://www.giantbomb.com/playstation-network-ps3/3045-88/",
+                "abbreviation": "PS3N"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                "id": 94,
+                "name": "PC",
+                "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                "abbreviation": "PC"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-96/",
+                "id": 96,
+                "name": "iPhone",
+                "site_detail_url": "https://www.giantbomb.com/iphone/3045-96/",
+                "abbreviation": "IPHN"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-121/",
+                "id": 121,
+                "name": "iPad",
+                "site_detail_url": "https://www.giantbomb.com/ipad/3045-121/",
+                "abbreviation": "IPAD"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-123/",
+                "id": 123,
+                "name": "Android",
+                "site_detail_url": "https://www.giantbomb.com/android/3045-123/",
+                "abbreviation": "ANDR"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-138/",
+                "id": 138,
+                "name": "Nintendo 3DS eShop",
+                "site_detail_url": "https://www.giantbomb.com/nintendo-3ds-eshop/3045-138/",
+                "abbreviation": "3DSE"
+            }
+        ],
+        "genres": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/genre/3060-41/",
+                "id": 41,
+                "name": "Platformer",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=platformer&wikiTypeId=3060&wikiId=41&genre=41"
+            }
+        ],
+        "similar_games": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-3200/",
+                "id": 3200,
+                "name": "Super Back to the Future II",
+                "site_detail_url": "https://www.giantbomb.com/super-back-to-the-future-ii/3030-3200/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-39276/",
+                "id": 39276,
+                "name": "Freedom Planet",
+                "site_detail_url": "https://www.giantbomb.com/freedom-planet/3030-39276/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-48591/",
+                "id": 48591,
+                "name": "TaleSpin",
+                "site_detail_url": "https://www.giantbomb.com/tale-spin/3030-48591/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-52590/",
+                "id": 52590,
+                "name": "Bingo the Multiva",
+                "site_detail_url": "https://www.giantbomb.com/bingo-the-multiva/3030-52590/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-35800/",
+                "id": 35800,
+                "name": "On the Ball",
+                "site_detail_url": "https://www.giantbomb.com/on-the-ball/3030-35800/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-53336/",
+                "id": 53336,
+                "name": "Guppy's Quest",
+                "site_detail_url": "https://www.giantbomb.com/guppys-quest/3030-53336/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-58141/",
+                "id": 58141,
+                "name": "Jurassic Boy",
+                "site_detail_url": "https://www.giantbomb.com/jurassic-boy/3030-58141/"
+            }
+        ]
+    },
+    "version": "1.0"
+}

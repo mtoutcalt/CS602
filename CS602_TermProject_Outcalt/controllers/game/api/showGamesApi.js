@@ -1,7 +1,5 @@
 var gameDB = require('../../../models/gameModel.js');
 var Game = gameDB.getGameModel();
-const xml = require('xml');
-const o2xml = require('object-to-xml');
 
 module.exports = async function showGamesApi(req, res, next) {
 

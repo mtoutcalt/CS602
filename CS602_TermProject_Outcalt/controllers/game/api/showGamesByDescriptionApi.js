@@ -5,7 +5,7 @@ module.exports = async function showGamesByDescriptionApi(req, res, next) {
   let descInput = req.params.description;
 
   const Game = gameDB.getGameModel();
-  let games = await Game.find({'description': {'$regex': descInput, $options:'i'}});
+  let games = await Game.find({'description': {'$regex': descInput, $options:'i'}}); //i triggers a query search flag and will match case-insensitive strings
   res.format({
       'application/json': function() {
         res.json(games);

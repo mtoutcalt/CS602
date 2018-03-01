@@ -1,0 +1,88 @@
+{
+    "error": "OK",
+    "limit": 1,
+    "offset": 0,
+    "number_of_page_results": 1,
+    "number_of_total_results": 1,
+    "status_code": 1,
+    "results": {
+        "deck": "The N64 Superman title is universally considered one of the worst videogames ever made, due to poor choices made in every aspect of its design.",
+        "name": "Superman",
+        "platforms": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-43/",
+                "id": 43,
+                "name": "Nintendo 64",
+                "site_detail_url": "https://www.giantbomb.com/nintendo-64/3045-43/",
+                "abbreviation": "N64"
+            }
+        ],
+        "genres": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/genre/3060-1/",
+                "id": 1,
+                "name": "Action",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=action&wikiTypeId=3060&wikiId=1&genre=1"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/genre/3060-4/",
+                "id": 4,
+                "name": "Adventure",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=adventure&wikiTypeId=3060&wikiId=4&genre=4"
+            }
+        ],
+        "similar_games": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-10682/",
+                "id": 10682,
+                "name": "Hercules: The Legendary Journeys",
+                "site_detail_url": "https://www.giantbomb.com/hercules-the-legendary-journeys/3030-10682/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-4855/",
+                "id": 4855,
+                "name": "Shaq Fu",
+                "site_detail_url": "https://www.giantbomb.com/shaq-fu/3030-4855/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-17312/",
+                "id": 17312,
+                "name": "Aquaman: Battle for Atlantis",
+                "site_detail_url": "https://www.giantbomb.com/aquaman-battle-for-atlantis/3030-17312/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-19261/",
+                "id": 19261,
+                "name": "Drake of the 99 Dragons",
+                "site_detail_url": "https://www.giantbomb.com/drake-of-the-99-dragons/3030-19261/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-3777/",
+                "id": 3777,
+                "name": "Catwoman",
+                "site_detail_url": "https://www.giantbomb.com/catwoman/3030-3777/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-41083/",
+                "id": 41083,
+                "name": "Geisha Novia",
+                "site_detail_url": "https://www.giantbomb.com/geisha-novia/3030-41083/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-47028/",
+                "id": 47028,
+                "name": "Frappy Corgi",
+                "site_detail_url": "https://www.giantbomb.com/frappy-corgi/3030-47028/"
+            }
+        ],
+        "themes": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/theme/3032-19/",
+                "id": 19,
+                "name": "Superhero",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=superhero&wikiTypeId=3032&wikiId=19&theme=19"
+            }
+        ]
+    },
+    "version": "1.0"
+}

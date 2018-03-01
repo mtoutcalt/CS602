@@ -19,6 +19,8 @@ module.exports = async function displayOrders(req, res, next) {
         }
     });
 
+    //another promise, took me a lot of trial and error to get to something so simple like this - I think await/async would be neat as an add-on topic in the
+    //future for this course
     Promise.all(results).then( (results) => {
       res.render('displayOrdersView', {title: "List of Orders", data: results});
     });

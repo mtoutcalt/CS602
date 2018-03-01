@@ -1,0 +1,156 @@
+{
+    "error": "OK",
+    "limit": 1,
+    "offset": 0,
+    "number_of_page_results": 1,
+    "number_of_total_results": 1,
+    "status_code": 1,
+    "results": {
+        "deck": "A puzzle game based on the challenge of moving a monkey inside of a ball around a course by the tilting of the course itself.",
+        "name": "Super Monkey Ball",
+        "platforms": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-23/",
+                "id": 23,
+                "name": "GameCube",
+                "site_detail_url": "https://www.giantbomb.com/gamecube/3045-23/",
+                "abbreviation": "GCN"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-34/",
+                "id": 34,
+                "name": "N-Gage",
+                "site_detail_url": "https://www.giantbomb.com/n-gage/3045-34/",
+                "abbreviation": "NGE"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-84/",
+                "id": 84,
+                "name": "Arcade",
+                "site_detail_url": "https://www.giantbomb.com/arcade/3045-84/",
+                "abbreviation": "ARC"
+            }
+        ],
+        "genres": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/genre/3060-6/",
+                "id": 6,
+                "name": "Driving/Racing",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=drivingracing&wikiTypeId=3060&wikiId=6&genre=6"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/genre/3060-17/",
+                "id": 17,
+                "name": "Minigame Collection",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=minigame-collection&wikiTypeId=3060&wikiId=17&genre=17"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/genre/3060-18/",
+                "id": 18,
+                "name": "Puzzle",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=puzzle&wikiTypeId=3060&wikiId=18&genre=18"
+            }
+        ],
+        "similar_games": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-8047/",
+                "id": 8047,
+                "name": "Marble Blast Ultra",
+                "site_detail_url": "https://www.giantbomb.com/marble-blast-ultra/3030-8047/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-13585/",
+                "id": 13585,
+                "name": "Kororinpa: Marble Mania",
+                "site_detail_url": "https://www.giantbomb.com/kororinpa-marble-mania/3030-13585/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-17983/",
+                "id": 17983,
+                "name": "Dewy's Adventure",
+                "site_detail_url": "https://www.giantbomb.com/dewys-adventure/3030-17983/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-9566/",
+                "id": 9566,
+                "name": "Marble Madness",
+                "site_detail_url": "https://www.giantbomb.com/marble-madness/3030-9566/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-24603/",
+                "id": 24603,
+                "name": "Hamster Heroes",
+                "site_detail_url": "https://www.giantbomb.com/hamster-heroes/3030-24603/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-32434/",
+                "id": 32434,
+                "name": "Igneous",
+                "site_detail_url": "https://www.giantbomb.com/igneous/3030-32434/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-31679/",
+                "id": 31679,
+                "name": "Rock of Ages",
+                "site_detail_url": "https://www.giantbomb.com/rock-of-ages/3030-31679/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-37589/",
+                "id": 37589,
+                "name": "Islands of Diamonds",
+                "site_detail_url": "https://www.giantbomb.com/islands-of-diamonds/3030-37589/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-36299/",
+                "id": 36299,
+                "name": "Armillo",
+                "site_detail_url": "https://www.giantbomb.com/armillo/3030-36299/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-27176/",
+                "id": 27176,
+                "name": "Roll Away",
+                "site_detail_url": "https://www.giantbomb.com/roll-away/3030-27176/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-41783/",
+                "id": 41783,
+                "name": "InFlux",
+                "site_detail_url": "https://www.giantbomb.com/in-flux/3030-41783/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-47002/",
+                "id": 47002,
+                "name": "Percy's Predicament",
+                "site_detail_url": "https://www.giantbomb.com/percys-predicament/3030-47002/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-50281/",
+                "id": 50281,
+                "name": "Super Impossible Road",
+                "site_detail_url": "https://www.giantbomb.com/super-impossible-road/3030-50281/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-51737/",
+                "id": 51737,
+                "name": "Polyball",
+                "site_detail_url": "https://www.giantbomb.com/polyball/3030-51737/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-35800/",
+                "id": 35800,
+                "name": "On the Ball",
+                "site_detail_url": "https://www.giantbomb.com/on-the-ball/3030-35800/"
+            }
+        ],
+        "themes": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/theme/3032-2/",
+                "id": 2,
+                "name": "Fantasy",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=fantasy&wikiTypeId=3032&wikiId=2&theme=2"
+            }
+        ]
+    },
+    "version": "1.0"
+}

@@ -16,8 +16,6 @@ module.exports = async function editOrder(req, res, next) {
 
   let allGamesArray = await Game.find({});
 
-  
-
 
   res.render('editOrderView', {title:"Edit Order",
                                   data: { id: orderAsync._id,
@@ -27,14 +25,6 @@ module.exports = async function editOrder(req, res, next) {
                                           created: orderAsync.created,
                                           orderNumber: orderAsync.orderNumber,
                                           customer: customerAsync.firstName}
-                                      ,
-                                    helpers: {
-                                      times: function(n, block) {
-                                        var accum = '';
-                                        for(var i = 0; i < n; ++i)
-                                            accum += block.fn(i);
-                                        return accum; }
-                                      }
                                     });
 
 };

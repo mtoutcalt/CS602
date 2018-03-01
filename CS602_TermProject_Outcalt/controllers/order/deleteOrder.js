@@ -4,9 +4,9 @@ var Order = DB.getOrderModel();
 module.exports = function deleteOrder(req, res, next) {
   let id = req.params.id;
 
-  Order.remove({}, (err, order) => {
-    console.log("All Deleted");
-  });
+  // Order.remove({}, (err, order) => {
+  //   console.log("All Deleted");
+  // });
 
   Order.findById(id, (err, order) => {
     if (err) {

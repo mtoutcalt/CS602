@@ -21,6 +21,7 @@ module.exports = async function displayCustomerOrders(req, res, next) {
     }
   });
 
+  //I learned how to use promises and await/async because it looks cleaner than the callback mess I had before
   Promise.all(results).then( (results) =>  {
     res.render('displayCustomerOrdersView', {title:"Orders By Customer", data: results});
   });

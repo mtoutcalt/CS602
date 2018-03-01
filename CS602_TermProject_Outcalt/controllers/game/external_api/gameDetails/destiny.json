@@ -1,0 +1,209 @@
+{
+    "error": "OK",
+    "limit": 1,
+    "offset": 0,
+    "number_of_page_results": 1,
+    "number_of_total_results": 1,
+    "status_code": 1,
+    "results": {
+        "deck": "Shoot your way across the solar system to level up and collect new loot in this multiplayer-focused first-person shooter from Bungie and Activision.",
+        "name": "Destiny",
+        "platforms": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-20/",
+                "id": 20,
+                "name": "Xbox 360",
+                "site_detail_url": "https://www.giantbomb.com/xbox-360/3045-20/",
+                "abbreviation": "X360"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-35/",
+                "id": 35,
+                "name": "PlayStation 3",
+                "site_detail_url": "https://www.giantbomb.com/playstation-3/3045-35/",
+                "abbreviation": "PS3"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-86/",
+                "id": 86,
+                "name": "Xbox 360 Games Store",
+                "site_detail_url": "https://www.giantbomb.com/xbox-360-games-store/3045-86/",
+                "abbreviation": "XBGS"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-88/",
+                "id": 88,
+                "name": "PlayStation Network (PS3)",
+                "site_detail_url": "https://www.giantbomb.com/playstation-network-ps3/3045-88/",
+                "abbreviation": "PS3N"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                "id": 145,
+                "name": "Xbox One",
+                "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                "abbreviation": "XONE"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                "id": 146,
+                "name": "PlayStation 4",
+                "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                "abbreviation": "PS4"
+            }
+        ],
+        "genres": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/genre/3060-32/",
+                "id": 32,
+                "name": "First-Person Shooter",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=first-person-shooter&wikiTypeId=3060&wikiId=32&genre=32"
+            }
+        ],
+        "reviews": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/review/1900-655/",
+                "id": 655,
+                "name": "Destiny Review",
+                "site_detail_url": "https://www.giantbomb.com/reviews/destiny-review/1900-655/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/review/1900-716/",
+                "id": 716,
+                "name": "Destiny: The Taken King Review",
+                "site_detail_url": "https://www.giantbomb.com/reviews/destiny-the-taken-king-review/1900-716/"
+            }
+        ],
+        "similar_games": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-32712/",
+                "id": 32712,
+                "name": "Phantasy Star Online 2",
+                "site_detail_url": "https://www.giantbomb.com/phantasy-star-online-2/3030-32712/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-35533/",
+                "id": 35533,
+                "name": "Halo 4",
+                "site_detail_url": "https://www.giantbomb.com/halo-4/3030-35533/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-35523/",
+                "id": 35523,
+                "name": "Defiance",
+                "site_detail_url": "https://www.giantbomb.com/defiance/3030-35523/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-45955/",
+                "id": 45955,
+                "name": "Borderlands: The Pre-Sequel!",
+                "site_detail_url": "https://www.giantbomb.com/borderlands-the-presequel/3030-45955/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-38788/",
+                "id": 38788,
+                "name": "Warframe",
+                "site_detail_url": "https://www.giantbomb.com/warframe/3030-38788/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-29025/",
+                "id": 29025,
+                "name": "PlanetSide 2",
+                "site_detail_url": "https://www.giantbomb.com/planetside-2/3030-29025/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-41690/",
+                "id": 41690,
+                "name": "Killzone: Shadow Fall",
+                "site_detail_url": "https://www.giantbomb.com/killzone-shadow-fall/3030-41690/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-46310/",
+                "id": 46310,
+                "name": "Far Cry 4",
+                "site_detail_url": "https://www.giantbomb.com/far-cry-4/3030-46310/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-20487/",
+                "id": 20487,
+                "name": "Borderlands",
+                "site_detail_url": "https://www.giantbomb.com/borderlands/3030-20487/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-42905/",
+                "id": 42905,
+                "name": "Halo 5: Guardians",
+                "site_detail_url": "https://www.giantbomb.com/halo-5-guardians/3030-42905/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-21488/",
+                "id": 21488,
+                "name": "Huxley: The Dystopia",
+                "site_detail_url": "https://www.giantbomb.com/huxley-the-dystopia/3030-21488/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-45239/",
+                "id": 45239,
+                "name": "Monster Hunter 4 Ultimate",
+                "site_detail_url": "https://www.giantbomb.com/monster-hunter-4-ultimate/3030-45239/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-26786/",
+                "id": 26786,
+                "name": "Halo: Reach",
+                "site_detail_url": "https://www.giantbomb.com/halo-reach/3030-26786/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-49250/",
+                "id": 49250,
+                "name": "Halo Online",
+                "site_detail_url": "https://www.giantbomb.com/halo-online/3030-49250/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-7110/",
+                "id": 7110,
+                "name": "Halo 2",
+                "site_detail_url": "https://www.giantbomb.com/halo-2/3030-7110/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-24035/",
+                "id": 24035,
+                "name": "Halo 3: ODST",
+                "site_detail_url": "https://www.giantbomb.com/halo-3-odst/3030-24035/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-2600/",
+                "id": 2600,
+                "name": "Halo: Combat Evolved",
+                "site_detail_url": "https://www.giantbomb.com/halo-combat-evolved/3030-2600/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-42918/",
+                "id": 42918,
+                "name": "Tom Clancy's The Division",
+                "site_detail_url": "https://www.giantbomb.com/tom-clancy-s-the-division/3030-42918/"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/game/3030-58767/",
+                "id": 58767,
+                "name": "From Other Suns",
+                "site_detail_url": "https://www.giantbomb.com/from-other-suns/3030-58767/"
+            }
+        ],
+        "themes": [
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/theme/3032-3/",
+                "id": 3,
+                "name": "Sci-Fi",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=sci-fi&wikiTypeId=3032&wikiId=3&theme=3"
+            },
+            {
+                "api_detail_url": "https://www.giantbomb.com/api/theme/3032-18/",
+                "id": 18,
+                "name": "Post-Apocalyptic",
+                "site_detail_url": "https://www.giantbomb.com/games/?wikiSlug=post-apocalyptic&wikiTypeId=3032&wikiId=18&theme=18"
+            }
+        ]
+    },
+    "version": "1.0"
+}

@@ -7,6 +7,7 @@ const Game = gameDB.getGameModel();
 const customerDB = require('../../models/customerModel.js');
 const Customer = customerDB.getCustomerModel();
 
+//this module was tricky because it reuires synching all 3 model objects together
 module.exports = async function saveOrder(req, res, next) {
 
   let orderIdInput = req.body.orderId;
@@ -30,6 +31,7 @@ module.exports = async function saveOrder(req, res, next) {
     let copiesInStock = asyncGame.quantityLeft;
     let totalQuantity = asyncGame.totalQuantity;
 
+    //I was getting strange errors so I used parseInt to make sure its doing arithmetic with numbers and not concatenating strings
     let quantDiff = (parseInt(copiesInStock) + parseInt(previousOrderedQuantityArray[i])) - parseInt(newQuantityArray[i]);
 
     if (quantDiff < 0 ) {
@@ -40,7 +42,6 @@ module.exports = async function saveOrder(req, res, next) {
     }
   }
 
-  //todo catch errors
   let asyncOrder = await Order.findById(orderIdInput);
 
   let gameNameArray = [];
@@ -53,8 +54,6 @@ module.exports = async function saveOrder(req, res, next) {
   let gamePromise = gameNameArray.map( async (gameName) => {
       try {
           let asyncGame = await Game.findOne({ 'name': gameName});
-
-          // gamesIds.push(asyncGame.id);
           return asyncGame.id;
       } catch(err) {
         console.log("Game Doesn't Exist");

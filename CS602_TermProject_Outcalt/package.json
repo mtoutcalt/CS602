@@ -16,8 +16,6 @@
     "mongoose": "^5.0.1",
     "mongoose-auto-increment": "^5.0.1",
     "mongoose-autopopulate": "^0.6.1",
-    "object-to-xml": "^1.1.0",
-    "request": "^2.83.0",
-    "xml": "^1.0.1"
+    "request": "^2.83.0"
   }
 }
